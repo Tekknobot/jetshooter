@@ -8,6 +8,11 @@ TagManager:
   - bullet
   - player
   - health
+  - DialogueBox
+  - PilotName
+  - PilotDialogue
+  - Portrait
+  - star
   layers:
   - Default
   - TransparentFX

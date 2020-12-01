@@ -13,7 +13,6 @@ public class playerTarget : MonoBehaviour
 	public HealthBar healthBar;   
 
     public AudioClip hit_sfx;
-    public AudioClip pickUp_sfx;
     private AudioSource source;     
 
     // Start is called before the first frame update
@@ -47,9 +46,7 @@ public class playerTarget : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {   
-        if(other.tag == "health") {
-            GetComponent<AudioSource>().clip = pickUp_sfx;
-            source.Play();    
+        if(other.tag == "health") {   
             currentHealth += 10;    
             healthBar.SetHealth(currentHealth);      
         }           

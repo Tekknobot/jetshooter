@@ -256,3 +256,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootEmitter: {fileID: 4038652432991881380}
   health: {fileID: 751308420837296306, guid: d54a092380abc9b419715e809be4e24d, type: 3}
+  star: {fileID: 751308420837296306, guid: 55cc14d796d238840a57385450d5acc2, type: 3}
