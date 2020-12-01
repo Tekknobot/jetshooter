@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4038652432991881385}
   - component: {fileID: 4038652432991881391}
   - component: {fileID: 4038652432991881382}
+  - component: {fileID: -8392817939373640837}
   m_Layer: 0
   m_Name: drone
   m_TagString: gundam
@@ -201,7 +202,6 @@ MonoBehaviour:
   explosionPrefab: {fileID: 3046491801608030097, guid: a1f67c244d1b8be49b36c52ac5297dc0,
     type: 3}
   explosionEmitter: {fileID: 4038652432991881380}
-  maincamera: {fileID: 0}
   Portraits:
   - {fileID: -3183050800061774617, guid: 8b96b06bf9a372540bb5ac8e6a3548e9, type: 3}
   - {fileID: 2673457766576801413, guid: 2960a775a41d53b429e6e3163e8de2f2, type: 3}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  damage: 100
+  damage: 20
 --- !u!114 &4038652432991881382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,3 +242,17 @@ MonoBehaviour:
     name: 
     sentences:
     - 
+--- !u!114 &-8392817939373640837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038652432991881380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925aa2cd1494dc84a8be9a5be8d03bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootEmitter: {fileID: 4038652432991881380}
+  health: {fileID: 751308420837296306, guid: d54a092380abc9b419715e809be4e24d, type: 3}

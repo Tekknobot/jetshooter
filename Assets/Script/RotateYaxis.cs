@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RotateYaxis : MonoBehaviour
 {
+    public float speed = 270f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class RotateYaxis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(transform.position, transform.up, Time.deltaTime * 270f);
+        transform.RotateAround(transform.position, transform.up, Time.deltaTime * speed);
     }
 }

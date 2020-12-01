@@ -8,7 +8,6 @@ public class Target : MonoBehaviour
     public float health = 30f;
     public GameObject explosionPrefab; 
 	public GameObject explosionEmitter;
-    public GameObject maincamera;
 
     public Sprite[] Portraits;
     public Image Portrait;
@@ -18,6 +17,13 @@ public class Target : MonoBehaviour
 
     public Text pilotName;
     public Text pilotText;
+
+    void Start() {
+        Portrait = GameObject.FindGameObjectWithTag("Portrait").GetComponent<UnityEngine.UI.Image>();
+        animator = GameObject.FindGameObjectWithTag("DialogueBox").GetComponent<UnityEngine.Animator>();
+        pilotName = GameObject.FindGameObjectWithTag("PilotName").GetComponent<UnityEngine.UI.Text>();
+        pilotText = GameObject.FindGameObjectWithTag("PilotDialogue").GetComponent<UnityEngine.UI.Text>();
+    }
 
     public void TakeDamage (float amount)
     {
@@ -33,7 +39,6 @@ public class Target : MonoBehaviour
         GetComponent<LootDrop>().LootChance();
          
         Instantiate(explosionPrefab, explosionEmitter.transform.position, Quaternion.identity); 
-        maincamera.SendMessage("TriggerShake");
         Destroy(gameObject);
 
         if (animator.GetBool("IsOpen") == false) {
