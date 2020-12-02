@@ -215,8 +215,7 @@ MonoBehaviour:
   DialogueList:
   - "Frankly, my dear, I don\u2019t give a damn."
   - I'm going to make him an offer he can't refuse.
-  - You don't understand! I coulda had class. I coulda been a contender. I could've
-    been somebody, instead of a bum, which is what I am.
+  - Yippee Ki Yay!
   - Toto, I've got a feeling we're not in Kansas anymore
   - Here's looking at you, kid.
   - Go ahead, make my day.
@@ -269,3 +268,4 @@ MonoBehaviour:
   lootEmitter: {fileID: 4038652432991881380}
   health: {fileID: 751308420837296306, guid: d54a092380abc9b419715e809be4e24d, type: 3}
   star: {fileID: 751308420837296306, guid: 55cc14d796d238840a57385450d5acc2, type: 3}
+  pickup: {fileID: 751308420837296306, guid: 1dbdbd3bc84447b49adc7e4045d182ce, type: 3}
