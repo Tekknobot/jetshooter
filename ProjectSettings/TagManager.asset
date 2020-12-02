@@ -13,6 +13,9 @@ TagManager:
   - PilotDialogue
   - Portrait
   - star
+  - pickup
+  - pickup2
+  - pickup3
   layers:
   - Default
   - TransparentFX

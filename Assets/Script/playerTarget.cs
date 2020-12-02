@@ -13,7 +13,15 @@ public class playerTarget : MonoBehaviour
 	public HealthBar healthBar;   
 
     public AudioClip hit_sfx;
-    private AudioSource source;     
+    private AudioSource source;
+
+    public GameObject girl;
+    public GameObject alien;
+    public GameObject robot;  
+
+    public bool girlCalled = false;
+    public bool alienCalled = false;
+    public bool robotCalled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +57,24 @@ public class playerTarget : MonoBehaviour
         if(other.tag == "health") {   
             currentHealth += 10;    
             healthBar.SetHealth(currentHealth);      
-        }           
+        }   
+
+        if(other.tag == "pickup" && girlCalled == false) {      
+            girl.GetComponent<SmoothFollow>().enabled = true;  
+            girl.GetComponent<NPC>().enabled = true;   
+            girlCalled = true; 
+        }
+
+        if(other.tag == "pickup2" && girlCalled == true) {      
+            robot.GetComponent<SmoothFollow>().enabled = true;  
+            robot.GetComponent<NPC>().enabled = true; 
+            robotCalled = true;   
+        }
+
+        if(other.tag == "pickup3" && girlCalled == true && robotCalled == true) {      
+            alien.GetComponent<SmoothFollow>().enabled = true;  
+            alien.GetComponent<NPC>().enabled = true;    
+        }
     }  
 
     void Death()

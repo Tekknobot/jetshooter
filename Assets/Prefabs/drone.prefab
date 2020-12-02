@@ -126,7 +126,7 @@ Animation:
   m_GameObject: {fileID: 4038652432991881380}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: f9ceeb85f8f08794994d626958c33335, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -269,3 +269,5 @@ MonoBehaviour:
   health: {fileID: 751308420837296306, guid: d54a092380abc9b419715e809be4e24d, type: 3}
   star: {fileID: 751308420837296306, guid: 55cc14d796d238840a57385450d5acc2, type: 3}
   pickup: {fileID: 751308420837296306, guid: 1dbdbd3bc84447b49adc7e4045d182ce, type: 3}
+  pickup2: {fileID: 751308420837296306, guid: 48bab1c8a9d889243bc15851a352c7ac, type: 3}
+  pickup3: {fileID: 751308420837296306, guid: aa2d344f64d1d0341bb8004fae0e3357, type: 3}

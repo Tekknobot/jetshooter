@@ -18,8 +18,8 @@ GameObject:
   - component: {fileID: 751308420837296311}
   - component: {fileID: 751308420837296299}
   m_Layer: 0
-  m_Name: pickup
-  m_TagString: pickup
+  m_Name: pickup3
+  m_TagString: pickup3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,8 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7534770479727973478, guid: 8032db4dc7a790e43b15d901fd70454a,
-    type: 3}
+  m_Sprite: {fileID: 371285871224859975, guid: 5c2b7f66a65d4c340b5b81550f3d1ba1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +97,7 @@ Animation:
   m_GameObject: {fileID: 751308420837296306}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: df9f62ce277853543bd9054e4eeecb63, type: 2}
+  m_Animation: {fileID: 7400000, guid: a9d65262a1e55e448831ef4963019010, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -114,7 +113,7 @@ Animator:
   m_GameObject: {fileID: 751308420837296306}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9e084896fb1996c46bf11eaa1f90cd33, type: 2}
+  m_Controller: {fileID: 9100000, guid: b695ac1fde2809f41ba3a9c9d41a2020, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

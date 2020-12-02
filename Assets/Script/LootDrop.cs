@@ -9,6 +9,8 @@ public class LootDrop : MonoBehaviour
     public GameObject health;
     public GameObject star;
     public GameObject pickup;
+    public GameObject pickup2;
+    public GameObject pickup3;
 
     public void LootChance()
     {
@@ -22,10 +24,20 @@ public class LootDrop : MonoBehaviour
             Instantiate(star, transform.position, Quaternion.identity);
         }  
 
-        if(Random.Range(0f, 1f) <= m_pickUpChance ) {
+        if(Random.Range(0f, 1f) <= m_pickUpChance) {
             // spawn a dropped item
             Instantiate(pickup, transform.position, Quaternion.identity);
-        }         
+        }   
+
+        if(Random.Range(0f, 1f) <= m_pickUpChance) {
+            // spawn a dropped item
+            Instantiate(pickup2, transform.position, Quaternion.identity);
+        }
+
+        if(Random.Range(0f, 1f) <= m_pickUpChance) {
+            // spawn a dropped item
+            Instantiate(pickup3, transform.position, Quaternion.identity);
+        }
     }
 
     const float m_healthChance = 0.5f / 10f;             // Set odds here - e.g. 1 in 10 chance   
