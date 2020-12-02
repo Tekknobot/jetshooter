@@ -212,6 +212,18 @@ MonoBehaviour:
   currentPic: 0
   pilotName: {fileID: 0}
   pilotText: {fileID: 0}
+  DialogueList:
+  - "Frankly, my dear, I don\u2019t give a damn."
+  - I'm going to make him an offer he can't refuse.
+  - You don't understand! I coulda had class. I coulda been a contender. I could've
+    been somebody, instead of a bum, which is what I am.
+  - Toto, I've got a feeling we're not in Kansas anymore
+  - Here's looking at you, kid.
+  - Go ahead, make my day.
+  - All right, Mr. DeMille, I'm ready for my closeup.
+  - May the Force be with you.
+  - Fasten your seatbelts. It's going to be a bumpy night.
+  - You talking to me?
 --- !u!114 &4038652432991881391
 MonoBehaviour:
   m_ObjectHideFlags: 0

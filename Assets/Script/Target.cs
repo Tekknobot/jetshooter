@@ -18,6 +18,12 @@ public class Target : MonoBehaviour
     public Text pilotName;
     public Text pilotText;
 
+    public List<string> DialogueList = new List<string>();
+
+    void Awake() {
+                
+    }
+
     void Start() {
         Portrait = GameObject.FindGameObjectWithTag("Portrait").GetComponent<UnityEngine.UI.Image>();
         animator = GameObject.FindGameObjectWithTag("DialogueBox").GetComponent<UnityEngine.Animator>();
@@ -52,19 +58,19 @@ public class Target : MonoBehaviour
                 //pilot name change 
                 if (Portrait.sprite.name == "alien-portrait 0") {
                     pilotName.text = "Mr. X";
-                    pilotText.text = "Billions of lightyears and you had to run into mine.";
+                    pilotText.text = DialogueList[Random.Range(0, DialogueList.Count)];
                 }  
                 if (Portrait.sprite.name == "girl-portrait 0") {
                     pilotName.text = "Venn Detta";
-                    pilotText.text = "See you in hellspace Cowboy!";
+                    pilotText.text = DialogueList[Random.Range(0, DialogueList.Count)];
                 }         
                 if (Portrait.sprite.name == "pilot-portrait 0") {
                     pilotName.text = "Zedd Mann";
-                    pilotText.text = "That's right Man! I am dangerous.";
+                    pilotText.text = DialogueList[Random.Range(0, DialogueList.Count)];
                 } 
                 if (Portrait.sprite.name == "robot-portrait 0") {
                     pilotName.text = "P-3P0";
-                    pilotText.text = "You can land a jumbo fucking jet in there.";
+                    pilotText.text = DialogueList[Random.Range(0, DialogueList.Count)];
                 }  
             }
         }

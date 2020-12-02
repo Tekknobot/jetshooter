@@ -99,8 +99,7 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 43638e415496a8644ae36fe12625bf2c, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 43638e415496a8644ae36fe12625bf2c, type: 2}
+  m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -199,6 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76dba0fd31885e4ca199e649e873bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 270
 --- !u!82 &751308420837296299
 AudioSource:
   m_ObjectHideFlags: 0

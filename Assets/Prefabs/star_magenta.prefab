@@ -99,8 +99,7 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 1ec427702b55a354cb5a9ec983c8b1fc, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 43638e415496a8644ae36fe12625bf2c, type: 2}
+  m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
