@@ -24,6 +24,8 @@ public class Spawner : MonoBehaviour {
  
     IEnumerator SpawnTimeDelay()
     {
+        yield return new WaitForSeconds(spawnDelay);
+        
         while (true)
         {
             if (Vector2.Distance(spawnTarget.position, playerTransform.position) < maxDistance)

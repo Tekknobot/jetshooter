@@ -3539,7 +3539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 1
-  spawnDelay: 0
+  spawnDelay: 4
   enemy: {fileID: 4038652432991881380, guid: 4f4e33b29d9fe2940a464273426db92e, type: 3}
   maxDistance: 24
   spawnTarget: {fileID: 236599743}
@@ -3626,7 +3626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 1
-  spawnDelay: 0
+  spawnDelay: 4
   enemy: {fileID: 4038652432991881380, guid: 4f4e33b29d9fe2940a464273426db92e, type: 3}
   maxDistance: 24
   spawnTarget: {fileID: 238618887}
@@ -5411,6 +5411,9 @@ MonoBehaviour:
   girl: {fileID: 0}
   alien: {fileID: 0}
   robot: {fileID: 0}
+  girlCalled: 0
+  alienCalled: 0
+  robotCalled: 0
 --- !u!114 &402494248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17295,6 +17298,9 @@ MonoBehaviour:
   girl: {fileID: 0}
   alien: {fileID: 0}
   robot: {fileID: 0}
+  girlCalled: 0
+  alienCalled: 0
+  robotCalled: 0
 --- !u!114 &1170301166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17913,7 +17919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 1
-  spawnDelay: 0
+  spawnDelay: 4
   enemy: {fileID: 4038652432991881380, guid: 4f4e33b29d9fe2940a464273426db92e, type: 3}
   maxDistance: 24
   spawnTarget: {fileID: 1201015427}
@@ -19106,7 +19112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 1
-  spawnDelay: 0
+  spawnDelay: 4
   enemy: {fileID: 4038652432991881380, guid: 4f4e33b29d9fe2940a464273426db92e, type: 3}
   maxDistance: 24
   spawnTarget: {fileID: 1337397464}
@@ -19425,7 +19431,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a07df671cc913884886e3e583cd43187, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 16b936c9b125f894fb0a8226a583c90f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -22979,7 +22985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 1
-  spawnDelay: 0
+  spawnDelay: 4
   enemy: {fileID: 4038652432991881380, guid: 4f4e33b29d9fe2940a464273426db92e, type: 3}
   maxDistance: 24
   spawnTarget: {fileID: 1629211799}
@@ -25805,6 +25811,9 @@ MonoBehaviour:
   girl: {fileID: 1170301161}
   alien: {fileID: 402494243}
   robot: {fileID: 2053551211}
+  girlCalled: 0
+  alienCalled: 0
+  robotCalled: 0
 --- !u!82 &1815442736
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30691,6 +30700,9 @@ MonoBehaviour:
   girl: {fileID: 0}
   alien: {fileID: 0}
   robot: {fileID: 0}
+  girlCalled: 0
+  alienCalled: 0
+  robotCalled: 0
 --- !u!114 &2053551216
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -29,12 +29,12 @@ public class LootDrop : MonoBehaviour
             Instantiate(pickup, transform.position, Quaternion.identity);
         }   
 
-        if(Random.Range(0f, 1f) <= m_pickUpChance) {
+        if(Random.Range(0f, 1f) <= m_pickUpChance2) {
             // spawn a dropped item
             Instantiate(pickup2, transform.position, Quaternion.identity);
         }
 
-        if(Random.Range(0f, 1f) <= m_pickUpChance) {
+        if(Random.Range(0f, 1f) <= m_pickUpChance3) {
             // spawn a dropped item
             Instantiate(pickup3, transform.position, Quaternion.identity);
         }
@@ -43,4 +43,6 @@ public class LootDrop : MonoBehaviour
     const float m_healthChance = 0.5f / 10f;             // Set odds here - e.g. 1 in 10 chance   
     const float m_starChance = 0.5f / 10f;
     const float m_pickUpChance = 0.5f / 10f;  
+    const float m_pickUpChance2 = 0.5f / 10f;
+    const float m_pickUpChance3 = 0.5f / 10f;
 }
