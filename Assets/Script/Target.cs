@@ -31,6 +31,12 @@ public class Target : MonoBehaviour
         pilotText = GameObject.FindGameObjectWithTag("PilotDialogue").GetComponent<UnityEngine.UI.Text>();
     }
 
+    void Update() {
+        if(transform.position.y <= -15) {
+            Destroy(this.gameObject);
+        }
+    }
+
     public void TakeDamage (float amount)
     {
         health -= amount;
