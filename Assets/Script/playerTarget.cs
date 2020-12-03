@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerTarget : MonoBehaviour
 {
@@ -80,6 +81,7 @@ public class playerTarget : MonoBehaviour
     void Death()
     {        
         Instantiate(explosionPrefab, explosionEmitter.transform.position, Quaternion.identity); 
+        SceneManager.LoadScene("SampleScene");
         Destroy(gameObject);
     }
 }
