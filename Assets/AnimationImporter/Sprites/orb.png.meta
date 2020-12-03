@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 60ebbed4ed3676e41a279a510b74f29a
+guid: 4f240fd3f41839a488c338b553c769f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6230381967318536065
-    second: bomber 0
+      213: -4171171785976224002
+    second: orb 0
   - first:
-      213: 7454822813791154438
-    second: bomber 1
+      213: 4627895120168764690
+    second: orb 1
   - first:
-      213: -2577258704483031075
-    second: bomber 2
+      213: -5201079550862861490
+    second: orb 2
   - first:
-      213: -189436357759339883
-    second: bomber 3
-  - first:
-      213: 4719684645355114267
-    second: bomber 4
-  - first:
-      213: 5415779591354838095
-    second: bomber 5
-  - first:
-      213: 8323452222355266128
-    second: bomber 6
-  - first:
-      213: -6872535699793202716
-    second: bomber 7
+      213: -6575293655986339342
+    second: orb 3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 624
+    maxTextureSize: 30
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -99,13 +87,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomber 0
+      name: orb 0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 208
-        height: 112
+        y: 15
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,20 +101,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f70baf65c9c3989a0800000000000000
-      internalID: -6230381967318536065
+      spriteID: ef661c74c550d16c0800000000000000
+      internalID: -4171171785976224002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber 1
+      name: orb 1
       rect:
         serializedVersion: 2
-        x: 208
-        y: 224
-        width: 208
-        height: 112
+        x: 15
+        y: 15
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,104 +122,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 601ff7f0ad9d47760800000000000000
-      internalID: 7454822813791154438
+      spriteID: 2154c679716993040800000000000000
+      internalID: 4627895120168764690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber 2
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 224
-        width: 208
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd76109fcdcbb3cd0800000000000000
-      internalID: -2577258704483031075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bomber 3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 112
-        width: 208
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 592f534e2acfe5df0800000000000000
-      internalID: -189436357759339883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bomber 4
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 112
-        width: 208
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b1fc142dd20bf7140800000000000000
-      internalID: 4719684645355114267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bomber 5
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 112
-        width: 208
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f4ce38428d6b82b40800000000000000
-      internalID: 5415779591354838095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bomber 6
+      name: orb 2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 208
-        height: 112
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05adb6a52b7d28370800000000000000
-      internalID: 8323452222355266128
+      spriteID: e4b554a74bd02d7b0800000000000000
+      internalID: -5201079550862861490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber 7
+      name: orb 3
       rect:
         serializedVersion: 2
-        x: 208
+        x: 15
         y: 0
-        width: 208
-        height: 112
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e1b2ab7139df90a0800000000000000
-      internalID: -6872535699793202716
+      spriteID: 2f10e0dd14ddfb4a0800000000000000
+      internalID: -6575293655986339342
       vertices: []
       indices: 
       edges: []
