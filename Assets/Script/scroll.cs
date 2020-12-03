@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class scroll : MonoBehaviour
 {
-     private float RotateSpeed = 0.5f;
-     private float Radius = 5f;
+     public float RotateSpeed = 0.5f;
+     public float Radius = 5f;
  
      private Vector2 _centre;
      private float _angle;
