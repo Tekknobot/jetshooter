@@ -30,7 +30,7 @@ public class flash : MonoBehaviour {
         } 
 
         if(other.tag == "gundam") {
-            Flash();
+            //Flash();
         }        
 	}		
 
