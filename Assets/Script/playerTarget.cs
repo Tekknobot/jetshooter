@@ -47,6 +47,25 @@ public class playerTarget : MonoBehaviour
         GetComponent<AudioSource>().clip = hit_sfx;
         source.Play();  
 
+        if(girlCalled == true) {
+            girl.GetComponent<SmoothFollow>().enabled = false;  
+            girl.GetComponent<SmoothFallback>().enabled = true;
+            girl.GetComponent<NPC>().enabled = false;   
+            girlCalled = false;
+        }
+        if(robotCalled == true) {
+            robot.GetComponent<SmoothFollow>().enabled = false;  
+            robot.GetComponent<SmoothFallback>().enabled = true;
+            robot.GetComponent<NPC>().enabled = false;   
+            robotCalled = false;
+        }    
+        if(alienCalled == true) {
+            alien.GetComponent<SmoothFollow>().enabled = false;  
+            alien.GetComponent<SmoothFallback>().enabled = true;
+            alien.GetComponent<NPC>().enabled = false;
+            alienCalled = false;                      
+        }
+
         if (currentHealth <= 0f)
         {
             Death();
@@ -60,21 +79,28 @@ public class playerTarget : MonoBehaviour
             healthBar.SetHealth(currentHealth);      
         }   
 
-        if(other.tag == "pickup" && girlCalled == false) {      
+        if(other.tag == "pickup" && girlCalled == false && robotCalled == false && alienCalled == false) {      
             girl.GetComponent<SmoothFollow>().enabled = true;  
-            girl.GetComponent<NPC>().enabled = true;   
+            girl.GetComponent<NPC>().enabled = true; 
+            girl.GetComponent<SmoothFallback>().enabled = false;  
             girlCalled = true; 
         }
 
-        if(other.tag == "pickup2" && girlCalled == true) {      
+        if(other.tag == "pickup2" && girlCalled == true && robotCalled == false && alienCalled == false) {      
             robot.GetComponent<SmoothFollow>().enabled = true;  
             robot.GetComponent<NPC>().enabled = true; 
+            robot.GetComponent<SmoothFallback>().enabled = false;
             robotCalled = true;   
+            girlCalled = true;
         }
 
-        if(other.tag == "pickup3" && girlCalled == true && robotCalled == true) {      
+        if(other.tag == "pickup3" && girlCalled == true && robotCalled == true && alienCalled == false) {      
             alien.GetComponent<SmoothFollow>().enabled = true;  
-            alien.GetComponent<NPC>().enabled = true;    
+            alien.GetComponent<NPC>().enabled = true;  
+            alien.GetComponent<SmoothFallback>().enabled = false;
+            alienCalled = true;  
+            robotCalled = true;   
+            girlCalled = true;            
         }
     }  
 
