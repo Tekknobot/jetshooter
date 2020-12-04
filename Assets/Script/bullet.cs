@@ -30,7 +30,13 @@ public class bullet : MonoBehaviour
 		if (enemy != null)
 		{
 			enemy.TakeDamage(damage);
-		}             
+		}     
+
+		bossTarget boss = other.GetComponent<bossTarget>();
+		if (boss != null)
+		{
+			boss.BossTakeDamage(damage);
+		} 
     }     
 
     void OnBecameInvisible() {

@@ -1,5 +1,146 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &72833734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72833735}
+  - component: {fileID: 72833736}
+  m_Layer: 0
+  m_Name: Oscillator_mini
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &72833735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72833734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.25, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4038652432991881383}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &72833736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72833734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd393a154fcfae49af90a1bb13892ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMult: 0
+  rangeMult: 0
+  bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
+  shootInterval: 0.3
+--- !u!1 &810289515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810289517}
+  - component: {fileID: 810289516}
+  m_Layer: 0
+  m_Name: Oscillator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &810289517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810289515}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4038652432991881383}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &810289516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810289515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd393a154fcfae49af90a1bb13892ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMult: 0
+  rangeMult: 0
+  bullet: {fileID: 4038652432991881380, guid: f9a2c1531ec428441b5ce37b2a38a9a2, type: 3}
+  shootInterval: 0.3
+--- !u!1 &1963841753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963841754}
+  - component: {fileID: 1963841755}
+  m_Layer: 0
+  m_Name: Oscillator_mini (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963841754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963841753}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.25, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4038652432991881383}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963841755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963841753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd393a154fcfae49af90a1bb13892ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMult: 0
+  rangeMult: 0
+  bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
+  shootInterval: 0.3
 --- !u!1 &4038652432991881380
 GameObject:
   m_ObjectHideFlags: 0
@@ -19,6 +160,8 @@ GameObject:
   - component: {fileID: 4038652432991881391}
   - component: {fileID: 4038652432991881382}
   - component: {fileID: -8392817939373640837}
+  - component: {fileID: -7696776894950684413}
+  - component: {fileID: 828217164}
   m_Layer: 0
   m_Name: bomber
   m_TagString: gundam
@@ -36,7 +179,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1963841754}
+  - {fileID: 72833735}
+  - {fileID: 810289517}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -78,7 +224,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -9
   m_Sprite: {fileID: -6230381967318536065, guid: 60ebbed4ed3676e41a279a510b74f29a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,21 +247,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 13, y: 5}
+    oldSize: {x: 13, y: 7}
     newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4, y: 2.5}
   m_EdgeRadius: 0
 --- !u!111 &4038652432991881388
 Animation:
@@ -198,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08cf0ca7c0ef2b7489a5c544299e9a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000
+  health: 100
   explosionPrefab: {fileID: 3046491801608030097, guid: a1f67c244d1b8be49b36c52ac5297dc0,
     type: 3}
   explosionEmitter: {fileID: 4038652432991881380}
@@ -271,3 +417,33 @@ MonoBehaviour:
   pickup: {fileID: 751308420837296306, guid: 1dbdbd3bc84447b49adc7e4045d182ce, type: 3}
   pickup2: {fileID: 751308420837296306, guid: 48bab1c8a9d889243bc15851a352c7ac, type: 3}
   pickup3: {fileID: 751308420837296306, guid: aa2d344f64d1d0341bb8004fae0e3357, type: 3}
+--- !u!114 &-7696776894950684413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038652432991881380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd393a154fcfae49af90a1bb13892ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMult: 5
+  rangeMult: 5
+  bullet: {fileID: 0}
+  shootInterval: 0
+--- !u!114 &828217164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038652432991881380}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bcbd2c5dc900d4590b5b8e80ffd26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateSpeed: 2
+  Radius: 1
