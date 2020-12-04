@@ -16,6 +16,7 @@ TagManager:
   - pickup
   - pickup2
   - pickup3
+  - Oscillator
   layers:
   - Default
   - TransparentFX
