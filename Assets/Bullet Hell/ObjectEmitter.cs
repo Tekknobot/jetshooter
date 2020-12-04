@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
  
-public class ObjectOscillator : MonoBehaviour {
+public class ObjectEmitter : MonoBehaviour {
      
-    public float speedMult = 1.0f;
-    public float rangeMult = 1.0f;
+    // public float speedMult = 1.0f;
+    // public float rangeMult = 1.0f;
+
     // Use this for initialization
     public GameObject bullet;
     public float shootInterval = 1.0f;
@@ -16,7 +17,7 @@ public class ObjectOscillator : MonoBehaviour {
     }
     void Update () {
         Vector3 position = transform.position;
-        float interval = Mathf.Sin(Time.time * (speedMult / rangeMult)) * rangeMult;
+        //float interval = Mathf.Sin(Time.time * (speedMult / rangeMult)) * rangeMult;
         bool shoot = false;
         if(Time.deltaTime + shootTimeAc > shootInterval)
         {
@@ -27,7 +28,7 @@ public class ObjectOscillator : MonoBehaviour {
         else
             shootTimeAc += Time.deltaTime;
          
-        position.x = basex + interval;
+        //position.x = basex + interval;
          
         transform.position = position;
         if(shoot)

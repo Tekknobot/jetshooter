@@ -30097,6 +30097,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7696776894950684413, guid: 50a77d5efec2a844fbec09c8b6e9d5d6,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4291067723966595529, guid: f3ae7cf7174ecf441a3cfec249ddfd24,
+        type: 3}
+    - target: {fileID: 72833736, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+      propertyPath: speedMult
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72833736, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+      propertyPath: rangeMult
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 810289516, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+      propertyPath: speedMult
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 810289516, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+      propertyPath: rangeMult
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963841755, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+      propertyPath: speedMult
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963841755, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+      propertyPath: rangeMult
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4038652432991881380, guid: 50a77d5efec2a844fbec09c8b6e9d5d6,
         type: 3}
       propertyPath: m_Name
@@ -30177,7 +30207,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1963841755, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+    - {fileID: 810289516, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
+    - {fileID: 72833736, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
 --- !u!1 &2032938390
 GameObject:

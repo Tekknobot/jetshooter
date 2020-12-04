@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72833735}
-  - component: {fileID: 72833736}
+  - component: {fileID: 2493579177598282617}
   m_Layer: 0
   m_Name: Oscillator_mini
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 4038652432991881383}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &72833736
+--- !u!114 &2493579177598282617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,11 +40,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 72833734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd393a154fcfae49af90a1bb13892ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 92426916e1dd6b94b8ff3dea5a01582b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMult: 0
-  rangeMult: 0
   bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
   shootInterval: 0.3
 --- !u!1 &810289515
@@ -56,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 810289517}
-  - component: {fileID: 810289516}
+  - component: {fileID: 1154055692290595918}
   m_Layer: 0
   m_Name: Oscillator
   m_TagString: Untagged
@@ -78,7 +76,7 @@ Transform:
   m_Father: {fileID: 4038652432991881383}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &810289516
+--- !u!114 &1154055692290595918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,11 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 810289515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd393a154fcfae49af90a1bb13892ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 92426916e1dd6b94b8ff3dea5a01582b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMult: 0
-  rangeMult: 0
   bullet: {fileID: 4038652432991881380, guid: f9a2c1531ec428441b5ce37b2a38a9a2, type: 3}
   shootInterval: 0.3
 --- !u!1 &1963841753
@@ -103,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1963841754}
-  - component: {fileID: 1963841755}
+  - component: {fileID: 3839661687145125648}
   m_Layer: 0
   m_Name: Oscillator_mini (1)
   m_TagString: Untagged
@@ -125,7 +121,7 @@ Transform:
   m_Father: {fileID: 4038652432991881383}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1963841755
+--- !u!114 &3839661687145125648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,11 +130,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1963841753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd393a154fcfae49af90a1bb13892ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 92426916e1dd6b94b8ff3dea5a01582b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMult: 0
-  rangeMult: 0
   bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
   shootInterval: 0.3
 --- !u!1 &4038652432991881380
