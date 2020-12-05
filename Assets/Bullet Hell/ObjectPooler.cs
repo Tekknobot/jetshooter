@@ -18,8 +18,7 @@ public class ObjectPooler : MonoBehaviour
     public GameObject objectToPool_8;
 
     public int amountToPool;
-
-
+    
     void Awake() {
         SharedInstance = this;
     }

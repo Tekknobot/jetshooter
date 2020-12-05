@@ -39,6 +39,9 @@ public class ObjectEmitter : MonoBehaviour {
                 bullet.transform.rotation = turret.transform.rotation;
                 bullet.SetActive(true);
             }
+            else {
+                Debug.Log("Missfire!");
+            }
         }    
     }
 }
