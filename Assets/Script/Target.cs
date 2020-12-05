@@ -50,7 +50,7 @@ public class Target : MonoBehaviour
     {       
         GetComponent<LootDrop>().LootChance();
          
-        Instantiate(explosionPrefab, explosionEmitter.transform.position, Quaternion.identity); 
+        Instantiate(explosionPrefab, this.transform.position, Quaternion.identity); 
         Destroy(gameObject);
 
         if (animator.GetBool("IsOpen") == false) {

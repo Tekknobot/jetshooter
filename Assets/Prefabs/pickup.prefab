@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 751308420837296298}
   - component: {fileID: 751308420837296311}
   - component: {fileID: 751308420837296299}
+  - component: {fileID: -8956056608713113471}
   m_Layer: 0
   m_Name: pickup
   m_TagString: pickup
@@ -295,3 +296,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8956056608713113471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751308420837296306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ba5ab5f798b594bb9e3b6ff908f9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 5

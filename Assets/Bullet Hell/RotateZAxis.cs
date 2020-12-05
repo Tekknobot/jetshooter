@@ -14,6 +14,6 @@ public class RotateZAxis : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        transform.Rotate(0,0, 20 * Time.deltaTime);
+        transform.Rotate(new Vector3(0,0,20) * Time.deltaTime * speed);
     }
 }

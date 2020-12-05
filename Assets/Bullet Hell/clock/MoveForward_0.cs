@@ -2,19 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveForward : MonoBehaviour
+public class MoveForward_0 : MonoBehaviour
 {
     public float movementSpeed;
+    Transform direction;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        direction = GameObject.Find("Osc_0").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * movementSpeed;
+        transform.position += direction.up * Time.deltaTime * movementSpeed;
     }
+
+    void OnBecameInvisible() {
+        Destroy(gameObject);
+    }    
 }
