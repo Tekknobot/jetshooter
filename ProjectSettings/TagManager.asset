@@ -17,6 +17,8 @@ TagManager:
   - pickup2
   - pickup3
   - Oscillator
+  - Hell_Emitter
+  - Hell_bullet_mini
   layers:
   - Default
   - TransparentFX

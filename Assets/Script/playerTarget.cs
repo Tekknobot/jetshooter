@@ -24,6 +24,8 @@ public class playerTarget : MonoBehaviour
     public bool alienCalled = false;
     public bool robotCalled = false;
 
+    public int pickHealthValue;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,7 +77,7 @@ public class playerTarget : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {   
         if(other.tag == "health") {   
-            currentHealth += 10;    
+            currentHealth += pickHealthValue;    
             healthBar.SetHealth(currentHealth);      
         }   
 
