@@ -33,7 +33,11 @@ public class Target : MonoBehaviour
 
     void Update() {
         if(transform.position.y <= -15) {
-            Destroy(this.gameObject);
+            if (gameObject.tag == "gundam") {
+                gameObject.SetActive(false);
+            } else {
+                Destroy(gameObject);
+            }
         }
     }
 

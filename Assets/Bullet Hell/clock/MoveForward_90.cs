@@ -20,6 +20,10 @@ public class MoveForward_90 : MonoBehaviour
     }
 
     void OnBecameInvisible() {
-        Destroy(gameObject);
-    }    
+        if (gameObject.tag == "gundam") {
+            gameObject.SetActive(false);
+        } else {
+            Destroy(gameObject);
+        }
+    }   
 }

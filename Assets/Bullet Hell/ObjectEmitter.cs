@@ -8,6 +8,7 @@ public class ObjectEmitter : MonoBehaviour {
 
     // Use this for initialization
     public GameObject bullet;
+    public GameObject turret;
     public float shootInterval = 1.0f;
     float basex = 0.0f;
     float shootTimeAc = 0.0f;
@@ -31,7 +32,13 @@ public class ObjectEmitter : MonoBehaviour {
         //position.x = basex + interval;
          
         transform.position = position;
-        if(shoot)
-            Instantiate(bullet, transform.position, bullet.transform.rotation);
+        if(shoot) {
+            GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject(); 
+            if (bullet != null) {
+                bullet.transform.position = turret.transform.position;
+                bullet.transform.rotation = turret.transform.rotation;
+                bullet.SetActive(true);
+            }
+        }    
     }
 }

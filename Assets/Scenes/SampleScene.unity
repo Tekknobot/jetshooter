@@ -429,6 +429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: ae87ab5ed4412a34c8598452740b4848, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!4 &302845110
 Transform:
@@ -1060,6 +1061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: fb4812aa1e25ffe4a8714a5ab5ad1061, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!1 &519420028
 GameObject:
@@ -1253,6 +1255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: 9987cc3cbbafb9c41a8f0540e13af4a5, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!4 &708378741
 Transform:
@@ -1504,7 +1507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &894433738
 Transform:
   m_ObjectHideFlags: 0
@@ -2386,6 +2389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: dad7a972e4c5d9c459b18b2644847552, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!4 &1222780420
 Transform:
@@ -2733,6 +2737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: d04aa9268d5f07e44bc5635d0304c773, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!4 &1387099053
 Transform:
@@ -2844,6 +2849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: 3af4f4a2c261a3e41b93e6fcb93b8b3f, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!4 &1392674122
 Transform:
@@ -2939,7 +2945,7 @@ PrefabInstance:
     - target: {fileID: 4038652432991881386, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4038652432991881387, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
@@ -3077,6 +3083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: 05a47d4bfe35f724c92d537a296fe0bb, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!4 &1612870570
 Transform:
@@ -3271,6 +3278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: f78205ce451bf59449196cb7f36e3b49, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!4 &1739005182
 Transform:
@@ -3849,6 +3857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: 2636e1f5c00eaf34a8d35e5da13007c5, type: 3}
+  turret: {fileID: 162634312}
   shootInterval: 0.6
 --- !u!1 &1935217304
 GameObject:
@@ -4111,6 +4120,69 @@ Transform:
   m_Father: {fileID: 947566854}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1974546633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974546635}
+  - component: {fileID: 1974546634}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1974546634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974546633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802193a37bcd8a943929e556f1b65e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 4038652432991881380, guid: d04aa9268d5f07e44bc5635d0304c773,
+    type: 3}
+  objectToPool_1: {fileID: 4038652432991881380, guid: f78205ce451bf59449196cb7f36e3b49,
+    type: 3}
+  objectToPool_2: {fileID: 4038652432991881380, guid: 9987cc3cbbafb9c41a8f0540e13af4a5,
+    type: 3}
+  objectToPool_3: {fileID: 4038652432991881380, guid: ae87ab5ed4412a34c8598452740b4848,
+    type: 3}
+  objectToPool_4: {fileID: 4038652432991881380, guid: dad7a972e4c5d9c459b18b2644847552,
+    type: 3}
+  objectToPool_5: {fileID: 4038652432991881380, guid: 05a47d4bfe35f724c92d537a296fe0bb,
+    type: 3}
+  objectToPool_6: {fileID: 4038652432991881380, guid: 3af4f4a2c261a3e41b93e6fcb93b8b3f,
+    type: 3}
+  objectToPool_7: {fileID: 4038652432991881380, guid: 2636e1f5c00eaf34a8d35e5da13007c5,
+    type: 3}
+  objectToPool_8: {fileID: 4038652432991881380, guid: fb4812aa1e25ffe4a8714a5ab5ad1061,
+    type: 3}
+  amountToPool: 9
+--- !u!4 &1974546635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974546633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.97008, y: 574.04895, z: -32.328125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2019270420
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,14 +4212,14 @@ RectTransform:
   m_GameObject: {fileID: 2019270420}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 4298162802865276675}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -80.93024, y: 0}
+  m_AnchoredPosition: {x: -94.41861, y: -0.000015258789}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2019270422
@@ -4656,6 +4728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: f9a2c1531ec428441b5ce37b2a38a9a2, type: 3}
+  turret: {fileID: 0}
   shootInterval: 0.3
 --- !u!114 &1526595139905932941
 MonoBehaviour:
@@ -5042,6 +5115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
+  turret: {fileID: 0}
   shootInterval: 0.3
 --- !u!224 &2616226635403832012
 RectTransform:
@@ -5134,6 +5208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
+  turret: {fileID: 0}
   shootInterval: 0.3
 --- !u!50 &4038652431240138528
 Rigidbody2D:
@@ -5392,7 +5467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4298162801191236208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5722,8 +5797,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.02326, y: 31.6279}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 31.162792, y: 25.58136}
+  m_SizeDelta: {x: 160, y: 19.286655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4298162802698455219
 CanvasRenderer:
@@ -5800,8 +5875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 52.093025, y: -16.744202}
-  m_SizeDelta: {x: -117.38252, y: -34.168114}
+  m_AnchoredPosition: {x: 44.651165, y: -11.162811}
+  m_SizeDelta: {x: -86.599014, y: -31.818985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4298162802817111299
 CanvasRenderer:
@@ -5897,8 +5972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.9302326, y: 533.9535}
-  m_SizeDelta: {x: 273.94818, y: 110.5383}
+  m_AnchoredPosition: {x: -0.9302326, y: 539.5349}
+  m_SizeDelta: {x: 273.94818, y: 85.838135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &4298162802865276684
 Animator:
