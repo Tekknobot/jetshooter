@@ -76,7 +76,7 @@ public class playerTarget : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {   
-        if(other.tag == "gundam") {   
+        if(other.tag == "gundam" || other.tag == "Boss") {   
             currentHealth = 0;      
         }  
 

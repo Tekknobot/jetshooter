@@ -13,6 +13,8 @@ public class bossTarget : MonoBehaviour
     public GameObject explosionPrefab; 
 	public GameObject explosionEmitter;
 
+    public GameObject primaryTurret;
+
     public float pieceCount = 12f;
 
     public GameObject[] oscillators;    
@@ -38,6 +40,8 @@ public class bossTarget : MonoBehaviour
         if (currentHealth <= 0f)
         {
             InstantiateCircle();
+            healthBar.GetComponent<HealthBar>().enabled = false;
+            primaryTurret.SetActive(false);
         }
     }
 
@@ -46,29 +50,21 @@ public class bossTarget : MonoBehaviour
         StartCoroutine(ExplosionTask());
     }
 
-    void CenterObject()
+    void GetObject()
     {
         GetComponent<ObjectOscillator>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
-
-        oscillators = GameObject.FindGameObjectsWithTag("Oscillator");
-        foreach (GameObject oscillator in oscillators)
-        {
-            oscillator.SetActive(false);
-        }
     }
 
     void Death()
     {       
         GetComponent<LootDrop>().LootChance();
-         
         Instantiate(explosionPrefab, explosionEmitter.transform.position, Quaternion.identity); 
-        GameObject.Find("Boss bar").SetActive(false);
         Destroy(gameObject);
     }
 
     IEnumerator ExplosionTask() {
-        CenterObject();
+        GetObject();
         for (int i = 0; i < pieceCount; i++)
         {
             /* Distance around the circle */  

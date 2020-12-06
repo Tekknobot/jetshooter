@@ -28,6 +28,7 @@ TagManager:
   - A270
   - A360
   - Boss_bullets
+  - Boss
   layers:
   - Default
   - TransparentFX
