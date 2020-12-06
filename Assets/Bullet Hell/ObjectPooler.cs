@@ -7,6 +7,8 @@ public class ObjectPooler : MonoBehaviour
     public static ObjectPooler SharedInstance;
 
     public List<GameObject> pooledObjects;
+    public List<GameObject> bulletpooledObjects;
+
     public GameObject objectToPool;
     public GameObject objectToPool_1;
     public GameObject objectToPool_2;
@@ -17,6 +19,8 @@ public class ObjectPooler : MonoBehaviour
     public GameObject objectToPool_7;
     public GameObject objectToPool_8;
 
+    public GameObject projectileToPool;
+
     public int amountToPool;
     
     void Awake() {
@@ -25,6 +29,7 @@ public class ObjectPooler : MonoBehaviour
 
     void Start() {
         pooledObjects = new List<GameObject>();
+        bulletpooledObjects = new List<GameObject>();
         for (int i = 0; i < amountToPool; i++) {
             GameObject obj = (GameObject)Instantiate(objectToPool);
             obj.SetActive(false); 
@@ -60,7 +65,11 @@ public class ObjectPooler : MonoBehaviour
 
             GameObject obj8 = (GameObject)Instantiate(objectToPool_8);
             obj8.SetActive(false); 
-            pooledObjects.Add(obj8);            
+            pooledObjects.Add(obj8); 
+
+            GameObject projectile = (GameObject)Instantiate(projectileToPool);
+            projectile.SetActive(false); 
+            bulletpooledObjects.Add(projectile);                        
         }        
     }
 
@@ -81,4 +90,16 @@ public class ObjectPooler : MonoBehaviour
     //3   
     return null;
     }    
+
+    public GameObject BulletPooledObject() {
+    //1
+    for (int i = 0; i < bulletpooledObjects.Count; i++) {
+    //2
+        if (!bulletpooledObjects[i].activeInHierarchy) {
+        return bulletpooledObjects[i];
+        }
+    }
+    //3   
+    return null;
+    }     
 }

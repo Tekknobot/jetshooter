@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 233070420}
-  - component: {fileID: 3839661689144332446}
+  - component: {fileID: 233070424}
   m_Layer: 0
   m_Name: Oscillator_mini (1)
   m_TagString: Oscillator
@@ -369,6 +369,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &233070424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233070423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee0a19e9896c6f45984ae5f9e2159e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
+  turret: {fileID: 233070423}
+  shootInterval: 0.3
 --- !u!1 &289027501
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18918d4fae58e844d96786bdb4dc4911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   roationSpeed: 3
   maxRotation: 25
   projectile: {fileID: 3133878213651952616, guid: 34e99bb969a7cc24c93fcf6bd674de0f,
@@ -1507,7 +1521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &894433738
 Transform:
   m_ObjectHideFlags: 0
@@ -2276,7 +2290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18918d4fae58e844d96786bdb4dc4911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   roationSpeed: 3
   maxRotation: 25
   projectile: {fileID: 3133878213651952616, guid: 34e99bb969a7cc24c93fcf6bd674de0f,
@@ -2351,7 +2364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1218809571}
-  - component: {fileID: 1154055693214817216}
+  - component: {fileID: 1218809574}
   m_Layer: 0
   m_Name: Oscillator
   m_TagString: Oscillator
@@ -2359,6 +2372,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1218809574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218809573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee0a19e9896c6f45984ae5f9e2159e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4038652432991881380, guid: f9a2c1531ec428441b5ce37b2a38a9a2, type: 3}
+  turret: {fileID: 1218809573}
+  shootInterval: 0.3
 --- !u!1 &1222780418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,7 +2908,7 @@ PrefabInstance:
     - target: {fileID: 4038652432991881380, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4038652432991881383, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
@@ -2940,7 +2968,7 @@ PrefabInstance:
     - target: {fileID: 4038652432991881385, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
       propertyPath: health
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4038652432991881386, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
@@ -2950,7 +2978,7 @@ PrefabInstance:
     - target: {fileID: 4038652432991881387, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4038652432991881387, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
@@ -2967,12 +2995,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4038652432991881390, guid: 2671a2d487cc26143a03ef82b9e1247b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4038652432991881391, guid: 2671a2d487cc26143a03ef82b9e1247b,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4038652432991881391, guid: 2671a2d487cc26143a03ef82b9e1247b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2671a2d487cc26143a03ef82b9e1247b, type: 3}
 --- !u!1 &1538744051
 GameObject:
@@ -4150,6 +4184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledObjects: []
+  bulletpooledObjects: []
   objectToPool: {fileID: 4038652432991881380, guid: d04aa9268d5f07e44bc5635d0304c773,
     type: 3}
   objectToPool_1: {fileID: 4038652432991881380, guid: f78205ce451bf59449196cb7f36e3b49,
@@ -4168,7 +4203,9 @@ MonoBehaviour:
     type: 3}
   objectToPool_8: {fileID: 4038652432991881380, guid: fb4812aa1e25ffe4a8714a5ab5ad1061,
     type: 3}
-  amountToPool: 9
+  projectileToPool: {fileID: 3133878213651952616, guid: 34e99bb969a7cc24c93fcf6bd674de0f,
+    type: 3}
+  amountToPool: 50
 --- !u!4 &1974546635
 Transform:
   m_ObjectHideFlags: 0
@@ -4628,7 +4665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18918d4fae58e844d96786bdb4dc4911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   roationSpeed: 3
   maxRotation: 25
   projectile: {fileID: 3133878213651952616, guid: 34e99bb969a7cc24c93fcf6bd674de0f,
@@ -4675,7 +4711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2092883273}
-  - component: {fileID: 2493579176136142071}
+  - component: {fileID: 2092883274}
   m_Layer: 0
   m_Name: Oscillator_mini
   m_TagString: Oscillator
@@ -4697,6 +4733,21 @@ Transform:
   m_Father: {fileID: 482519930}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092883274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092883272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee0a19e9896c6f45984ae5f9e2159e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
+  turret: {fileID: 2092883272}
+  shootInterval: 0.3
 --- !u!114 &830554098703152373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4715,21 +4766,6 @@ MonoBehaviour:
   pickup: {fileID: 751308420837296306, guid: 1dbdbd3bc84447b49adc7e4045d182ce, type: 3}
   pickup2: {fileID: 751308420837296306, guid: 48bab1c8a9d889243bc15851a352c7ac, type: 3}
   pickup3: {fileID: 751308420837296306, guid: aa2d344f64d1d0341bb8004fae0e3357, type: 3}
---- !u!114 &1154055693214817216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218809573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92426916e1dd6b94b8ff3dea5a01582b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 4038652432991881380, guid: f9a2c1531ec428441b5ce37b2a38a9a2, type: 3}
-  turret: {fileID: 0}
-  shootInterval: 0.3
 --- !u!114 &1526595139905932941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5102,21 +5138,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107581827473866961}
   m_CullTransparentMesh: 0
---- !u!114 &2493579176136142071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092883272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92426916e1dd6b94b8ff3dea5a01582b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
-  turret: {fileID: 0}
-  shootInterval: 0.3
 --- !u!224 &2616226635403832012
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5195,21 +5216,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: CONTINUE >>
---- !u!114 &3839661689144332446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233070423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92426916e1dd6b94b8ff3dea5a01582b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 4038652432991881380, guid: 73427c3719026144e94910805d00e2b0, type: 3}
-  turret: {fileID: 0}
-  shootInterval: 0.3
 --- !u!50 &4038652431240138528
 Rigidbody2D:
   serializedVersion: 4
@@ -5385,7 +5391,6 @@ MonoBehaviour:
   health: 2000
   explosionPrefab: {fileID: 3046491801608030097, guid: a1f67c244d1b8be49b36c52ac5297dc0,
     type: 3}
-  explosionEmitter: {fileID: 4038652431240138538}
   Portraits:
   - {fileID: -3183050800061774617, guid: 8b96b06bf9a372540bb5ac8e6a3548e9, type: 3}
   - {fileID: 2673457766576801413, guid: 2960a775a41d53b429e6e3163e8de2f2, type: 3}
@@ -5467,7 +5472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &4298162801191236208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5769,10 +5774,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 53bd2da7b9ef39c4d9448fad5700e900, type: 3}
-    m_FontSize: 16
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -5797,8 +5802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31.162792, y: 25.58136}
-  m_SizeDelta: {x: 160, y: 19.286655}
+  m_AnchoredPosition: {x: 30.697676, y: 25.58136}
+  m_SizeDelta: {x: 161.29135, y: 19.286655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4298162802698455219
 CanvasRenderer:
@@ -5847,7 +5852,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 53bd2da7b9ef39c4d9448fad5700e900, type: 3}
-    m_FontSize: 12
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -5875,8 +5880,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 44.651165, y: -11.162811}
-  m_SizeDelta: {x: -86.599014, y: -31.818985}
+  m_AnchoredPosition: {x: 41.39535, y: -11.162811}
+  m_SizeDelta: {x: -93.29857, y: -31.818985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4298162802817111299
 CanvasRenderer:

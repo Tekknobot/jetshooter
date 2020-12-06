@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
  
-public class ObjectEmitter : MonoBehaviour {
+public class BossTurrets : MonoBehaviour {
      
     // public float speedMult = 1.0f;
     // public float rangeMult = 1.0f;
@@ -33,15 +33,7 @@ public class ObjectEmitter : MonoBehaviour {
          
         transform.position = position;
         if(shoot) {
-            GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject(); 
-            if (bullet != null) {
-                bullet.transform.position = turret.transform.position;
-                bullet.transform.rotation = turret.transform.rotation;
-                bullet.SetActive(true);
-            }
-            else if (bullet == null) {
-                Debug.Log("Missfire!");
-            }
+            Instantiate(bullet, turret.transform.position, Quaternion.identity);
         }    
     }
 }

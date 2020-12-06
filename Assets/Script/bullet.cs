@@ -11,19 +11,23 @@ public class bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.up * speed;
+        //rb.velocity = transform.up * speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        rb.velocity = transform.up * speed;
     } 
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "gundam") {
-            Destroy(this.gameObject);
+            if (gameObject.tag == "bullet") {
+                gameObject.SetActive(false);
+            } else {
+                Destroy(gameObject);
+            }
         } 
 
 		Target enemy = other.GetComponent<Target>();
@@ -37,9 +41,19 @@ public class bullet : MonoBehaviour
 		{
 			boss.BossTakeDamage(damage);
 		} 
+
+		bulletTarget bullet_mini = other.GetComponent<bulletTarget>();
+		if (bullet_mini != null)
+		{
+			bullet_mini.bulletTakeDamage(damage);
+		}         
     }     
 
     void OnBecameInvisible() {
-        Destroy(gameObject);
+        if (gameObject.tag == "bullet") {
+            gameObject.SetActive(false);
+        } else {
+            Destroy(gameObject);
+        }
     }     
 }

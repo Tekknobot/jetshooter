@@ -22,7 +22,8 @@ public class enemyMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {   
         if(other.tag == "player") {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            gameObject.SetActive(false);
         } 
 
 		playerTarget player = other.GetComponent<playerTarget>();

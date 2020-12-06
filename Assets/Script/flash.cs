@@ -29,8 +29,8 @@ public class flash : MonoBehaviour {
             Flash();
         } 
 
-        if(other.tag == "gundam") {
-            //Flash();
+        if(other.tag == "gundam" && other.gameObject != null) {
+            Flash();
         }        
 	}		
 

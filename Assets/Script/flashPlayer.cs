@@ -27,7 +27,11 @@ public class flashPlayer : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "gundam") {
             Flash();
-        }       
+        }   
+
+        if(other.tag == "Hell_bullet_mini") {
+            Flash();
+        }
 	}		
 
 	private void Flash() {

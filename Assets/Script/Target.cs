@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
 {
     public float health = 30f;
     public GameObject explosionPrefab; 
-	public GameObject explosionEmitter;
+	//public GameObject explosionEmitter;
 
     public Sprite[] Portraits;
     public Image Portrait;
@@ -20,6 +20,9 @@ public class Target : MonoBehaviour
 
     public List<string> DialogueList = new List<string>();
 
+    public GameObject[] emitters;
+    
+
     void Awake() {
                 
     }
@@ -29,16 +32,8 @@ public class Target : MonoBehaviour
         animator = GameObject.FindGameObjectWithTag("DialogueBox").GetComponent<UnityEngine.Animator>();
         pilotName = GameObject.FindGameObjectWithTag("PilotName").GetComponent<UnityEngine.UI.Text>();
         pilotText = GameObject.FindGameObjectWithTag("PilotDialogue").GetComponent<UnityEngine.UI.Text>();
-    }
 
-    void Update() {
-        if(transform.position.y <= -15) {
-            if (gameObject.tag == "gundam") {
-                gameObject.SetActive(false);
-            } else {
-                Destroy(gameObject);
-            }
-        }
+        emitters = GameObject.FindGameObjectsWithTag("Hell_Emitter");
     }
 
     public void TakeDamage (float amount)
@@ -54,8 +49,8 @@ public class Target : MonoBehaviour
     {       
         GetComponent<LootDrop>().LootChance();
          
-        Instantiate(explosionPrefab, this.transform.position, Quaternion.identity); 
-        Destroy(gameObject);
+        Instantiate(explosionPrefab, this.transform.position, Quaternion.identity);         
+        Destroy(this.gameObject);
 
         if (animator.GetBool("IsOpen") == false) {
             if(Random.Range(0f, 1f) <= m_dialogueChance ) {        

@@ -39,6 +39,11 @@ public class playerTarget : MonoBehaviour
         if (currentHealth > maxHealth) {
             currentHealth = maxHealth;
         }
+
+        if (currentHealth <= 0f)
+        {
+            Death();
+        }
     }
 
     public void PlayerTakeDamage (int amount)
@@ -67,15 +72,14 @@ public class playerTarget : MonoBehaviour
             alien.GetComponent<NPC>().enabled = false;
             alienCalled = false;                      
         }
-
-        if (currentHealth <= 0f)
-        {
-            Death();
-        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {   
+        if(other.tag == "gundam") {   
+            currentHealth = 0;      
+        }  
+
         if(other.tag == "health") {   
             currentHealth += pickHealthValue;    
             healthBar.SetHealth(currentHealth);      
@@ -103,7 +107,7 @@ public class playerTarget : MonoBehaviour
             alienCalled = true;  
             robotCalled = true;   
             girlCalled = true;            
-        }
+        }      
     }  
 
     void Death()

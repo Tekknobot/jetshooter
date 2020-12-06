@@ -24,7 +24,9 @@ public class RotateOscillator : MonoBehaviour
     IEnumerator StartClock() {
         floatz = 10;
         foreach (GameObject emitter in emitters) {
-            emitter.GetComponent<ObjectEmitter>().shootInterval = 0.6f;
+            if (emitter != null) {
+                emitter.GetComponent<ObjectEmitter>().shootInterval = 0.6f;
+            }
         }
         yield return new WaitForSeconds(10);
         StartCoroutine(StartClockWise());
@@ -33,7 +35,9 @@ public class RotateOscillator : MonoBehaviour
     IEnumerator StartClockWise() {
         floatz = -10;
         foreach (GameObject emitter in emitters) {
-            emitter.GetComponent<ObjectEmitter>().shootInterval = 0.2f;
+            if (emitter != null) {
+                emitter.GetComponent<ObjectEmitter>().shootInterval = 0.2f;
+            }
         }
         yield return new WaitForSeconds(10);
         StartCoroutine(StartClock());

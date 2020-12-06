@@ -43,8 +43,29 @@ public class Player : MonoBehaviour
     }
 
     void Attack() {
-        Instantiate(projectile, leftgun.transform.position, Quaternion.identity);
-        Instantiate(projectile, rightgun.transform.position, Quaternion.identity);  
+        // Instantiate(projectile, leftgun.transform.position, Quaternion.identity);
+        // Instantiate(projectile, rightgun.transform.position, Quaternion.identity);  
+
+        GameObject leftbullet = ObjectPooler.SharedInstance.BulletPooledObject(); 
+        if (leftbullet != null) {
+            leftbullet.transform.position = leftgun.transform.position;
+            leftbullet.transform.rotation = leftgun.transform.rotation;
+            leftbullet.SetActive(true);
+        }
+        else if (leftbullet == null) {
+            Debug.Log("Missfire!");
+        }
+
+        GameObject rightbullet = ObjectPooler.SharedInstance.BulletPooledObject(); 
+        if (rightbullet != null) {
+            rightbullet.transform.position = rightgun.transform.position;
+            rightbullet.transform.rotation = rightgun.transform.rotation;
+            rightbullet.SetActive(true);
+        }
+        else if (rightbullet == null) {
+            Debug.Log("Missfire!");
+        }        
+
         GetComponent<AudioSource>().clip = bullet_sfx;
         source.Play();      
     }

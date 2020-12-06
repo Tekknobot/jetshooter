@@ -20,7 +20,7 @@ public class MoveForward_90 : MonoBehaviour
     }
 
     void OnBecameInvisible() {
-        if (gameObject.tag == "gundam") {
+        if (gameObject.tag == "Hell_bullet_mini") {
             gameObject.SetActive(false);
         } else {
             Destroy(gameObject);
