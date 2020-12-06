@@ -46,7 +46,8 @@ public class Player : MonoBehaviour
         // Instantiate(projectile, leftgun.transform.position, Quaternion.identity);
         // Instantiate(projectile, rightgun.transform.position, Quaternion.identity);  
 
-        GameObject leftbullet = ObjectPooler.SharedInstance.BulletPooledObject(); 
+        GameObject leftbullet = ObjectPooler.SharedInstance.GetPooledObject("bullet");
+
         if (leftbullet != null) {
             leftbullet.transform.position = leftgun.transform.position;
             leftbullet.transform.rotation = leftgun.transform.rotation;
@@ -56,7 +57,8 @@ public class Player : MonoBehaviour
             Debug.Log("Missfire!");
         }
 
-        GameObject rightbullet = ObjectPooler.SharedInstance.BulletPooledObject(); 
+        GameObject rightbullet = ObjectPooler.SharedInstance.GetPooledObject("bullet");
+
         if (rightbullet != null) {
             rightbullet.transform.position = rightgun.transform.position;
             rightbullet.transform.rotation = rightgun.transform.rotation;

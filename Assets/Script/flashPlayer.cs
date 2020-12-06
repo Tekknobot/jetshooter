@@ -29,7 +29,8 @@ public class flashPlayer : MonoBehaviour {
             Flash();
         }   
 
-        if(other.tag == "Hell_bullet_mini") {
+        if(other.tag == "A0" || other.tag == "A45" || other.tag == "A90" || other.tag == "A135" || other.tag == "A180" ||
+            other.tag == "A225" || other.tag == "A270" || other.tag == "A360" ) {
             Flash();
         }
 	}		

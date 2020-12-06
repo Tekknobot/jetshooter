@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3401581834952218774}
   - component: {fileID: 7559642567615748769}
+  - component: {fileID: 5570982766425200930}
   m_Layer: 0
   m_Name: pickup_sfx
   m_TagString: Untagged
@@ -127,3 +128,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5570982766425200930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262692873211688751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ba5ab5f798b594bb9e3b6ff908f9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 2

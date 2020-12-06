@@ -20,7 +20,7 @@ public class MoveForward_180 : MonoBehaviour
     }
 
     void OnBecameInvisible() {
-        if (gameObject.tag == "Hell_bullet_mini") {
+        if (gameObject.tag == "A180") {
             gameObject.SetActive(false);
         } else {
             Destroy(gameObject);

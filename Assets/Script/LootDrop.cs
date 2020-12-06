@@ -40,9 +40,9 @@ public class LootDrop : MonoBehaviour
         }
     }
 
-    const float m_healthChance = 0.5f / 10f;             // Set odds here - e.g. 1 in 10 chance   
-    const float m_starChance = 0.5f / 10f;
-    const float m_pickUpChance = 0.5f / 10f;  
-    const float m_pickUpChance2 = 0.5f / 10f;
-    const float m_pickUpChance3 = 0.5f / 10f;
+    const float m_healthChance = 0.2f / 10f;             // Set odds here - e.g. 1 in 10 chance   
+    const float m_starChance = 0.2f / 10f;
+    const float m_pickUpChance = 0.2f / 10f;  
+    const float m_pickUpChance2 = 0.2f / 10f;
+    const float m_pickUpChance3 = 0.2f / 10f;
 }

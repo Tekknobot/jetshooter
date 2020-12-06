@@ -18,11 +18,11 @@ GameObject:
   - component: {fileID: 4038652432991881382}
   - component: {fileID: -8392817939373640837}
   - component: {fileID: 8731520819123702465}
-  - component: {fileID: -8869530956273646635}
   - component: {fileID: -9067717252167484889}
+  - component: {fileID: 5737899902439325788}
   m_Layer: 0
   m_Name: hell_orbmini 8
-  m_TagString: Hell_bullet_mini
+  m_TagString: A360
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,13 +180,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4038652432991881380}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dec2ae5039e90b14485ed88e3aea4468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  damage: 20
+  speed: 0
+  damage: 25
 --- !u!114 &4038652432991881382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,20 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ba5ab5f798b594bb9e3b6ff908f9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 20
---- !u!114 &-8869530956273646635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038652432991881380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e109b135eba26468511ff44146a42b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 5
+  destroyTime: 0
 --- !u!114 &-9067717252167484889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,10 +248,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   explosionPrefab: {fileID: 165192, guid: 54c23dd75e9041248ad671a01699a2bf, type: 3}
-  Portraits: []
-  Portrait: {fileID: 0}
-  animator: {fileID: 0}
-  currentPic: 0
-  pilotName: {fileID: 0}
-  pilotText: {fileID: 0}
-  DialogueList: []
+--- !u!114 &5737899902439325788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038652432991881380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e109b135eba26468511ff44146a42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5

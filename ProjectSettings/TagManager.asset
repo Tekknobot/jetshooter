@@ -19,6 +19,15 @@ TagManager:
   - Oscillator
   - Hell_Emitter
   - Hell_bullet_mini
+  - A0
+  - A45
+  - A90
+  - A135
+  - A180
+  - A225
+  - A270
+  - A360
+  - Boss_bullets
   layers:
   - Default
   - TransparentFX

@@ -20,7 +20,7 @@ public class MoveForward_270 : MonoBehaviour
     }
 
     void OnBecameInvisible() {
-        if (gameObject.tag == "Hell_bullet_mini") {
+        if (gameObject.tag == "A270") {
             gameObject.SetActive(false);
         } else {
             Destroy(gameObject);
