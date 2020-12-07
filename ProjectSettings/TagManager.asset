@@ -29,6 +29,7 @@ TagManager:
   - A360
   - Boss_bullets
   - Boss
+  - triggerBox
   layers:
   - Default
   - TransparentFX

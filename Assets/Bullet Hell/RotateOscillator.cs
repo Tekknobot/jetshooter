@@ -13,11 +13,11 @@ public class RotateOscillator : MonoBehaviour
     void Start()
     {
         StartCoroutine(StartClock());
-        emitters = GameObject.FindGameObjectsWithTag("Hell_Emitter");
     }
 
     // Update is called once per frame
     void Update() {
+        emitters = GameObject.FindGameObjectsWithTag("Hell_Emitter");
         transform.Rotate(new Vector3(0,0,floatz) * Time.deltaTime * speed);
     }
 
