@@ -2141,7 +2141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1376920201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2152,7 +2152,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 50d7b30e51e8ee64ab6d1e6ef2338b10, type: 3}
+  m_audioClip: {fileID: 8300000, guid: aaa9778fd9e68ff4d9511e4b3295f531, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2658,7 +2658,7 @@ MonoBehaviour:
   girlCalled: 0
   alienCalled: 0
   robotCalled: 0
-  pickHealthValue: 20
+  pickHealthValue: 10
 --- !u!82 &1815442736
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2671,7 +2671,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4437,7 +4437,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: -6127173771234360717, guid: 828903f15664ef64db606fbd2608fb72,
+  m_Sprite: {fileID: -3578370076113131176, guid: 420139dabe67c7e4aa17c7bf6891237f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4466,7 +4466,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
+    oldSize: {x: 6, y: 4}
     newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4484,7 +4484,7 @@ Animation:
   m_GameObject: {fileID: 4038652431562264308}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: edb14706545e9214cbf75a653e0cb57b, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -4500,7 +4500,7 @@ Animator:
   m_GameObject: {fileID: 4038652431562264308}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b2427a9638236e8449e266934c0dccfc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
