@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
  
-public class BossTurrets : MonoBehaviour {
+public class Turrets : MonoBehaviour {
      
     // public float speedMult = 1.0f;
     // public float rangeMult = 1.0f;
