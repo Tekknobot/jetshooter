@@ -21,5 +21,9 @@ public class bomber : MonoBehaviour
         if (guardLeft == null && gaurdRight == null) {
             primaryWeapon.SetActive(true);
         }
+
+        if (gameObject.GetComponent<bossTarget>().currentHealth <= 0f) {
+            primaryWeapon.SetActive(false);
+        }
     }
 }

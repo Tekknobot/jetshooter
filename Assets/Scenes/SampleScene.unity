@@ -1777,6 +1777,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bomber_mini
       objectReference: {fileID: 0}
+    - target: {fileID: 6961258819207239150, guid: 0231b2f072ce25e4a8c5976abcc5a038,
+        type: 3}
+      propertyPath: health
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0231b2f072ce25e4a8c5976abcc5a038, type: 3}
 --- !u!1 &1170301161
@@ -2473,6 +2478,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1445859876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6961258819207239139, guid: 0231b2f072ce25e4a8c5976abcc5a038,
+    type: 3}
+  m_PrefabInstance: {fileID: 1930319741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1538744051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,6 +3087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bomber_mini (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961258819207239150, guid: 0231b2f072ce25e4a8c5976abcc5a038,
+        type: 3}
+      propertyPath: health
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0231b2f072ce25e4a8c5976abcc5a038, type: 3}
@@ -5179,7 +5195,7 @@ PrefabInstance:
     - target: {fileID: 524166010, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
       propertyPath: gaurdRight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1445859876}
     - target: {fileID: 524166011, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
       propertyPath: target
       value: 
@@ -5249,6 +5265,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1895623806}
+    - target: {fileID: 6354447164925276305, guid: 50a77d5efec2a844fbec09c8b6e9d5d6,
+        type: 3}
+      propertyPath: maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
 --- !u!1001 &6383695235845610263
@@ -5269,7 +5290,7 @@ PrefabInstance:
     - target: {fileID: 2008952949, guid: 6530511c524d2214ca74dd86da81f20a, type: 3}
       propertyPath: gaurdRight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1445859876}
     - target: {fileID: 6961258819207239136, guid: 6530511c524d2214ca74dd86da81f20a,
         type: 3}
       propertyPath: m_LocalPosition.x
