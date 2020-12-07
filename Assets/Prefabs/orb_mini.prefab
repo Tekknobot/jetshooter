@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08cf0ca7c0ef2b7489a5c544299e9a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 2
   explosionPrefab: {fileID: 165192, guid: 54c23dd75e9041248ad671a01699a2bf, type: 3}
   Portraits:
   - {fileID: -3183050800061774617, guid: 8b96b06bf9a372540bb5ac8e6a3548e9, type: 3}
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  damage: 20
+  damage: 25
 --- !u!114 &4038652432991881382
 MonoBehaviour:
   m_ObjectHideFlags: 0

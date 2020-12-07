@@ -80,5 +80,5 @@ public class Target : MonoBehaviour
             }
         }
     }
-    const float m_dialogueChance = 0.2f / 10f;     // Set odds here - e.g. 1 in 10 chance
+    const float m_dialogueChance = 0.05f / 10f;     // Set odds here - e.g. 1 in 10 chance
 }

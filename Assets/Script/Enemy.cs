@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyMovement : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float speed = 1f;
     public int damage = 100;
@@ -24,7 +24,7 @@ public class enemyMovement : MonoBehaviour
         if(other.tag == "player") {
             //Destroy(this.gameObject);
             gameObject.SetActive(false);
-        } 
+        }        
 
 		playerTarget player = other.GetComponent<playerTarget>();
 		if (player != null)

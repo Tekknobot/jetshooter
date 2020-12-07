@@ -100,7 +100,15 @@ public class bullet : MonoBehaviour
             } else {
                 Destroy(gameObject);
             }
-        }                            
+        }             
+
+        if(other.tag == "Boss_bullets") {
+            if (gameObject.tag == "bullet") {
+                gameObject.SetActive(false);
+            } else {
+                Destroy(gameObject);
+            }
+        }                        
 
 		Target enemy = other.GetComponent<Target>();
 		if (enemy != null)

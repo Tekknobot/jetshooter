@@ -28,9 +28,7 @@ public class bulletTarget : MonoBehaviour
     void Death()
     {       
         GetComponent<LootDrop>().LootChance();
-         
         Instantiate(explosionPrefab, this.transform.position, Quaternion.identity); 
-        
         gameObject.SetActive(false);
     }
 }
