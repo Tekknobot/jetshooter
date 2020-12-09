@@ -5,6 +5,27 @@ TextureImporter:
   - first:
       213: 2233235731437256080
     second: city_bg 0
+  - first:
+      213: -1375100637213175290
+    second: city_bg 1
+  - first:
+      213: -4176194860073156023
+    second: city_bg 2
+  - first:
+      213: -7503695568068147544
+    second: city_bg 3
+  - first:
+      213: 5619417759060497063
+    second: city_bg 4
+  - first:
+      213: -3598795276354112932
+    second: city_bg 5
+  - first:
+      213: 6638009895687366663
+    second: city_bg 6
+  - first:
+      213: -5246029027851989757
+    second: city_bg 7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +85,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1200
+    maxTextureSize: 14400
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -82,9 +103,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 300
-        height: 1200
+        y: 9600
+        width: 368
+        height: 4800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -94,6 +115,153 @@ TextureImporter:
       bones: []
       spriteID: 09df608c01c0efe10800000000000000
       internalID: 2233235731437256080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_bg 1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 9600
+        width: 368
+        height: 4800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602de7c8149aaece0800000000000000
+      internalID: -1375100637213175290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_bg 2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 9600
+        width: 368
+        height: 4800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9420784b6ec2b06c0800000000000000
+      internalID: -4176194860073156023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_bg 3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 368
+        height: 4800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a600aa13a48dd790800000000000000
+      internalID: -7503695568068147544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_bg 4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 4800
+        width: 368
+        height: 4800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2925dcdae2cfd40800000000000000
+      internalID: 5619417759060497063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_bg 5
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 4800
+        width: 368
+        height: 4800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c523f8d63c28e0ec0800000000000000
+      internalID: -3598795276354112932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_bg 6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 4800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70829f794d2fe1c50800000000000000
+      internalID: 6638009895687366663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_bg 7
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 368
+        height: 4800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d8e71d46c5237b0800000000000000
+      internalID: -5246029027851989757
       vertices: []
       indices: 
       edges: []
