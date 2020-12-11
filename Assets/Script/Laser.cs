@@ -8,7 +8,10 @@ public class Laser : MonoBehaviour
     private LineRenderer _lineRenderer;
     public HealthBar healthBar;
     playerTarget player;
+    private string playerTag = "player";
     public int laserDamage;
+
+    private RaycastHit2D hit;
 
     // Use this for initialization
     void Start()
@@ -21,9 +24,9 @@ public class Laser : MonoBehaviour
     void Update()
     {
         _lineRenderer.SetPosition(0, transform.position);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up);
+        hit = Physics2D.Raycast(transform.position, transform.up);
         
-        if (hit.collider.tag == "player")
+        if (hit.collider.tag == playerTag)
         {
             _lineRenderer.SetPosition(1, new Vector3(hit.point.x, hit.point.y, transform.position.z));
             Instantiate(laserParticles, hit.point, Quaternion.identity);

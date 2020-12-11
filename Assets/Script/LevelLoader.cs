@@ -32,7 +32,7 @@ public class LevelLoader : MonoBehaviour
         if (player.GetComponent<playerTarget>().currentHealth <= 0) {
             playerBar.SetActive(false);
             bossBar.SetActive(false);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(LoadLevel(1));
         }
 
         if (bossTrigger == null) {
