@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4038652432991881391}
   - component: {fileID: 4038652432991881382}
   - component: {fileID: -8392817939373640837}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: orb_mini
   m_TagString: Boss_bullets
   m_Icon: {fileID: 0}

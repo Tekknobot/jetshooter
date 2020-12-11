@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 8731520819123702465}
   - component: {fileID: -4621430987206392493}
   - component: {fileID: 7985501303980382708}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: hell_orbmini 3
   m_TagString: A45
   m_Icon: {fileID: 0}

@@ -13,6 +13,16 @@ public class Laser : MonoBehaviour
 
     private RaycastHit2D hit;
 
+    public GameObject maincamera;
+    
+    public AudioClip hit_sfx;
+    private AudioSource source;
+
+    void Awake() {
+        maincamera = GameObject.FindGameObjectWithTag ("MainCamera");
+        source = GetComponent<AudioSource>();
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -26,9 +36,14 @@ public class Laser : MonoBehaviour
         _lineRenderer.SetPosition(0, transform.position);
         hit = Physics2D.Raycast(transform.position, transform.up);
         
-        if (hit.collider.tag == playerTag)
+        if (hit.collider)
         {
             _lineRenderer.SetPosition(1, new Vector3(hit.point.x, hit.point.y, transform.position.z));
+            maincamera.SendMessage("TriggerShake", SendMessageOptions.RequireReceiver);
+            
+            GetComponent<AudioSource>().clip = hit_sfx;
+            source.Play();            
+            
             Instantiate(laserParticles, hit.point, Quaternion.identity);
 
             player.currentHealth -= laserDamage;
