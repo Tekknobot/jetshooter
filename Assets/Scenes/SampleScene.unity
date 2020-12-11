@@ -1423,6 +1423,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 15
+--- !u!1 &894972123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3056132388569388695, guid: ac38560a1b123e44ca7fd731c40817ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 3056132389920209643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &907528708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7723704262235247470, guid: e324111d70cb73e4587733e686729a5b,
@@ -1462,6 +1468,12 @@ MonoBehaviour:
   Colorize: 0
   theCamera: {fileID: 519420031}
   ParallaxFactor: 0.3
+--- !u!1 &923827829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6961258819207239139, guid: 6530511c524d2214ca74dd86da81f20a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6383695235845610263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &947566853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,7 +3114,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 3056132389920209643}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 894972123}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f01af6bb11b8154da904c9873fc6f42, type: 3}
@@ -4153,11 +4165,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 1727355982033010222, guid: aa95fe6c1cf07924a87ee5dbc447b2e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5598498958223723732, guid: aa95fe6c1cf07924a87ee5dbc447b2e7,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1815442729}
+    - target: {fileID: 5598498958223723732, guid: aa95fe6c1cf07924a87ee5dbc447b2e7,
+        type: 3}
+      propertyPath: bossBar
+      value: 
+      objectReference: {fileID: 894972123}
+    - target: {fileID: 5598498958223723732, guid: aa95fe6c1cf07924a87ee5dbc447b2e7,
+        type: 3}
+      propertyPath: playerBar
+      value: 
+      objectReference: {fileID: 2107581825596445512}
+    - target: {fileID: 5598498958223723732, guid: aa95fe6c1cf07924a87ee5dbc447b2e7,
+        type: 3}
+      propertyPath: bossTrigger
+      value: 
+      objectReference: {fileID: 923827829}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa95fe6c1cf07924a87ee5dbc447b2e7, type: 3}
 --- !u!1 &2107581825596445512
@@ -4720,6 +4752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Boss bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056132388569388695, guid: ac38560a1b123e44ca7fd731c40817ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac38560a1b123e44ca7fd731c40817ee, type: 3}
@@ -5516,6 +5553,11 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 6354447164925276305, guid: 50a77d5efec2a844fbec09c8b6e9d5d6,
+        type: 3}
+      propertyPath: bossBar
+      value: 
+      objectReference: {fileID: 894972123}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50a77d5efec2a844fbec09c8b6e9d5d6, type: 3}
 --- !u!1001 &6383695235845610263

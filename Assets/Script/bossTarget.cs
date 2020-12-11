@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class bossTarget : MonoBehaviour
 {
     public HealthBar healthBar; 
+    public GameObject bossBar;
 
     public int maxHealth = 100;
 	public int currentHealth;
@@ -40,7 +41,7 @@ public class bossTarget : MonoBehaviour
         if (currentHealth <= 0f)
         {
             InstantiateCircle();
-            healthBar.GetComponent<HealthBar>().enabled = false;
+            bossBar.SetActive(false);
             primaryTurret.SetActive(false);
         }
     }

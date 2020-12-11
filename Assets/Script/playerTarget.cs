@@ -78,6 +78,7 @@ public class playerTarget : MonoBehaviour
     {   
         if(other.tag == "gundam" || other.tag == "Boss") {   
             currentHealth = 0;      
+            healthBar.SetHealth(currentHealth);
         }  
 
         if(other.tag == "health") {   
