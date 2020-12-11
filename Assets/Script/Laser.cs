@@ -16,6 +16,7 @@ public class Laser : MonoBehaviour
     public GameObject maincamera;
     
     public AudioClip hit_sfx;
+    public AudioClip laser_sfx;
     private AudioSource source;
 
     void Awake() {
@@ -36,6 +37,9 @@ public class Laser : MonoBehaviour
         _lineRenderer.SetPosition(0, transform.position);
         hit = Physics2D.Raycast(transform.position, transform.up);
         
+        GetComponent<AudioSource>().clip = laser_sfx;
+        source.Play();
+
         if (hit.collider)
         {
             _lineRenderer.SetPosition(1, new Vector3(hit.point.x, hit.point.y, transform.position.z));
