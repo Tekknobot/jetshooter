@@ -113,7 +113,7 @@ public class playerTarget : MonoBehaviour
     void Death()
     {        
         Instantiate(explosionPrefab, explosionEmitter.transform.position, Quaternion.identity); 
-        SceneManager.LoadScene("SampleScene");
+        //SceneManager.LoadScene("SampleScene");
         Destroy(gameObject);
     }
 }
