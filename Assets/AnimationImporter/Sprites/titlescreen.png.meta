@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: 7197087382428336180
     second: titlescreen 0
+  - first:
+      213: 4978515542178489449
+    second: titlescreen 1
+  - first:
+      213: -9147319114658052147
+    second: titlescreen 2
+  - first:
+      213: -1809352733709742861
+    second: titlescreen 3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 190
+    maxTextureSize: 118
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -82,9 +91,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 90
-        height: 190
+        y: 31
+        width: 59
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -94,6 +103,69 @@ TextureImporter:
       bones: []
       spriteID: 430461fa7d031e360800000000000000
       internalID: 7197087382428336180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titlescreen 1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 31
+        width: 59
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9646f40228d371540800000000000000
+      internalID: 4978515542178489449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titlescreen 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 59
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc78aa3dab13e0180800000000000000
+      internalID: -9147319114658052147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titlescreen 3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 59
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc49d96643e3e6e0800000000000000
+      internalID: -1809352733709742861
       vertices: []
       indices: 
       edges: []
