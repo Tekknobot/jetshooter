@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 751308420837296311}
   - component: {fileID: 751308420837296299}
   - component: {fileID: -8956056608713113471}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pickup
   m_TagString: pickup
   m_Icon: {fileID: 0}
