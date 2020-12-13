@@ -86,6 +86,10 @@ public class playerTarget : MonoBehaviour
             healthBar.SetHealth(currentHealth);      
         }   
 
+        if(other.tag == "star") {   
+            SumScore.Add(1);      
+        }         
+
         if(other.tag == "pickup" && girlCalled == false && robotCalled == false && alienCalled == false) {      
             girl.GetComponent<SmoothFollow>().enabled = true;  
             girl.GetComponent<NPC>().enabled = true; 
