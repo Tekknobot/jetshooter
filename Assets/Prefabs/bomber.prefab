@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72833735}
   - component: {fileID: 6354447163773729434}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Oscillator_mini
   m_TagString: Oscillator
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 810289517}
   - component: {fileID: 6354447162899949878}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Oscillator
   m_TagString: Oscillator
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963841754}
   - component: {fileID: 6354447164061661320}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Oscillator_mini (1)
   m_TagString: Oscillator
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 6354447164925276319}
   - component: {fileID: 524166010}
   - component: {fileID: 524166011}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: bomber
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -406,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+  bossBar: {fileID: 0}
   maxHealth: 1000
   currentHealth: 0
   explosionPrefab: {fileID: 3046491801608030097, guid: a1f67c244d1b8be49b36c52ac5297dc0,
@@ -465,7 +466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6354447164311391402}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Primary
   m_TagString: Untagged
   m_Icon: {fileID: 0}

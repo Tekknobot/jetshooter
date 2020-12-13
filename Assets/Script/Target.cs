@@ -36,8 +36,7 @@ public class Target : MonoBehaviour
         emitters = GameObject.FindGameObjectsWithTag("Hell_Emitter");
     }
 
-    public void TakeDamage (float amount)
-    {
+    public void TakeDamage (float amount) {
         health -= amount;
         if (health <= 0f)
         {

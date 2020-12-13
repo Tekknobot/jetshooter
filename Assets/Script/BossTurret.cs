@@ -7,6 +7,7 @@ public class BossTurret : MonoBehaviour
     public GameObject primaryWeapon;
     public GameObject guardLeft;
     public GameObject gaurdRight;
+    public GameObject bomber;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,9 @@ public class BossTurret : MonoBehaviour
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
             primaryWeapon.SetActive(true);
         }
+
+        if (guardLeft == null && gaurdRight == null && bomber == null) {
+            gameObject.GetComponent<ObjectOscillator>().enabled = true;
+        }        
     }
 }

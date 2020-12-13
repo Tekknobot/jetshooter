@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6383695237143013562}
   - component: {fileID: 6383695237143013563}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Hell_Emitter
   m_TagString: Hell_Emitter
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ GameObject:
   - component: {fileID: 6383695235987259715}
   - component: {fileID: 2008952948}
   - component: {fileID: 2008952949}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: turret
   m_TagString: gundam
   m_Icon: {fileID: 0}
