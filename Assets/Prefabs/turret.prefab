@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08cf0ca7c0ef2b7489a5c544299e9a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000
+  health: 1500
   explosionPrefab: {fileID: 3046491801608030097, guid: a1f67c244d1b8be49b36c52ac5297dc0,
     type: 3}
   Portraits:
@@ -350,3 +350,4 @@ MonoBehaviour:
   primaryWeapon: {fileID: 6383695237143013564}
   guardLeft: {fileID: 0}
   gaurdRight: {fileID: 0}
+  bomber: {fileID: 0}

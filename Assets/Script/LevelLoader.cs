@@ -42,8 +42,8 @@ public class LevelLoader : MonoBehaviour
             playerBar.SetActive(false);
             bossBar.SetActive(false);
             stageClear.SetActive(true);
-            StartCoroutine(LoadLevel(1));
-            //LoadNextLevel();
+            //StartCoroutine(LoadLevel(1));
+            LoadNextLevel();
         }        
     }
 
