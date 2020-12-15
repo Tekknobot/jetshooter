@@ -19,9 +19,10 @@ GameObject:
   - component: {fileID: 4038652432991881391}
   - component: {fileID: 4038652432991881382}
   - component: {fileID: -8392817939373640837}
+  - component: {fileID: -7226587093862881745}
   m_Layer: 2
-  m_Name: orb_mini
-  m_TagString: Boss_bullets
+  m_Name: orb_mini_dir_180
+  m_TagString: A180
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec2ae5039e90b14485ed88e3aea4468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   damage: 25
 --- !u!114 &4038652432991881382
 MonoBehaviour:
@@ -270,3 +271,16 @@ MonoBehaviour:
   pickup: {fileID: 751308420837296306, guid: 1dbdbd3bc84447b49adc7e4045d182ce, type: 3}
   pickup2: {fileID: 751308420837296306, guid: 48bab1c8a9d889243bc15851a352c7ac, type: 3}
   pickup3: {fileID: 751308420837296306, guid: aa2d344f64d1d0341bb8004fae0e3357, type: 3}
+--- !u!114 &-7226587093862881745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038652432991881380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ccefcbbb5c412644b9eb20d91b90a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5

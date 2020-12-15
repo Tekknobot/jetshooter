@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveForward_360 : MonoBehaviour
+public class MoveInDirection_270 : MonoBehaviour
 {
     public float movementSpeed;
     Transform direction;
@@ -10,7 +10,7 @@ public class MoveForward_360 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        direction = GameObject.Find("Osc_360").transform;
+        direction = GameObject.Find("Dir_270").transform;
     }
 
     // Update is called once per frame
@@ -20,10 +20,10 @@ public class MoveForward_360 : MonoBehaviour
     }
 
     void OnBecameInvisible() {
-        if (gameObject.tag == "A360") {
+        if (gameObject.tag == "A270") {
             gameObject.SetActive(false);
         } else {
             Destroy(gameObject);
         }
-    } 
+    }   
 }

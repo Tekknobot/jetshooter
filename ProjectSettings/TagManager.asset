@@ -26,10 +26,10 @@ TagManager:
   - A180
   - A225
   - A270
-  - A360
   - Boss_bullets
   - Boss
   - triggerBox
+  - A315
   layers:
   - Default
   - TransparentFX
