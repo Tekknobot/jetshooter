@@ -2233,7 +2233,7 @@ PrefabInstance:
     - target: {fileID: 2298629183508847187, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
       propertyPath: health
-      value: 250
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2298629183508847197, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
@@ -2294,6 +2294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pharoah_mini (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298629183508847198, guid: c561825a0ffadd747b324c78d228759b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8532469412991338992, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
@@ -4470,7 +4475,7 @@ PrefabInstance:
     - target: {fileID: 2298629183508847187, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
       propertyPath: health
-      value: 250
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2298629183508847197, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
@@ -4531,6 +4536,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pharoah_mini (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298629183508847198, guid: c561825a0ffadd747b324c78d228759b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8532469412991338992, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
@@ -5740,6 +5750,11 @@ PrefabInstance:
       propertyPath: bossBar
       value: 
       objectReference: {fileID: 894972123}
+    - target: {fileID: 979463348804547998, guid: 635b456385b639446970d500cec24481,
+        type: 3}
+      propertyPath: maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6176766872342996596, guid: 635b456385b639446970d500cec24481,
         type: 3}
       propertyPath: target
@@ -5804,6 +5819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pharaoh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905053489144139179, guid: 635b456385b639446970d500cec24481,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 635b456385b639446970d500cec24481, type: 3}
@@ -7253,6 +7273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: turret_desert
       objectReference: {fileID: 0}
+    - target: {fileID: 8482107917888811605, guid: fff766f76faa3274788f60a62b0f7996,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8482107917888811606, guid: fff766f76faa3274788f60a62b0f7996,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7332,7 +7357,7 @@ PrefabInstance:
     - target: {fileID: 2298629183508847187, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
       propertyPath: health
-      value: 250
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2298629183508847197, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
@@ -7393,6 +7418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pharoah_mini
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298629183508847198, guid: c561825a0ffadd747b324c78d228759b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8532469412991338992, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}

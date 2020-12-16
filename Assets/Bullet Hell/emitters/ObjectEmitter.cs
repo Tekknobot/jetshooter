@@ -39,7 +39,7 @@ public class ObjectEmitter: MonoBehaviour {
             GameObject bullet_miniA180 = ObjectPooler.SharedInstance.GetPooledObject("A180");
             GameObject bullet_miniA225 = ObjectPooler.SharedInstance.GetPooledObject("A225");
             GameObject bullet_miniA270 = ObjectPooler.SharedInstance.GetPooledObject("A270");
-            GameObject bullet_miniA360 = ObjectPooler.SharedInstance.GetPooledObject("A360");
+            GameObject bullet_miniA360 = ObjectPooler.SharedInstance.GetPooledObject("A315");
 
             if (bullet_miniA0 != null && bullet_miniA45 != null && bullet_miniA90 != null && bullet_miniA135 != null && 
             bullet_miniA180 != null && bullet_miniA225 != null && bullet_miniA270 != null && bullet_miniA360 != null) {
