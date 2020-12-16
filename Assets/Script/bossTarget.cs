@@ -18,7 +18,9 @@ public class bossTarget : MonoBehaviour
 
     public float pieceCount = 12f;
 
-    public GameObject[] oscillators;    
+    public GameObject[] oscillators;   
+
+    bool explosionTaskStarted = false; 
 
     void Start() {
 		currentHealth = maxHealth;
@@ -38,9 +40,10 @@ public class bossTarget : MonoBehaviour
     {
         currentHealth -= amount;
         healthBar.SetHealth(currentHealth);
-        if (currentHealth <= 0f)
+        if (currentHealth <= 0f && explosionTaskStarted == false)
         {
             InstantiateCircle();
+            explosionTaskStarted = true;
             bossBar.SetActive(false);
             primaryTurret.SetActive(false);
         }
