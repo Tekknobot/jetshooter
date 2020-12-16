@@ -29,7 +29,7 @@ public class SumScoreManager : MonoBehaviour {
     }
 
     void Start() {
-        SumScore.Reset(); // Ensure score is 0 when object loads
+        //SumScore.Reset(); // Ensure score is 0 when object loads
         if (initialScore != 0)
             SumScore.Add(initialScore);  // Set initial score
         if (storeHighScore) {

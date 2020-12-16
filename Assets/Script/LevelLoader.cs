@@ -13,6 +13,7 @@ public class LevelLoader : MonoBehaviour
     public GameObject loading;
     public GameObject stageClear;
     public GameObject gameOver;
+    public GameObject continueAgain;
 
     public Animator transition;
     public float transitionTime = 1f;
@@ -20,7 +21,7 @@ public class LevelLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //SumScore.Add(PlayerPrefs.GetInt("Score"));
     }
 
     // Update is called once per frame
@@ -31,11 +32,21 @@ public class LevelLoader : MonoBehaviour
             StartCoroutine(LoadLevel(1));
         }
 
-        if (player.GetComponent<playerTarget>().currentHealth <= 0) {
+        if (player.GetComponent<playerTarget>().currentHealth <= 0 && SumScore.Score >= 5) {
+            playerBar.SetActive(false);
+            bossBar.SetActive(false);
+            continueAgain.SetActive(true);
+            SumScore.Subtract(5);
+            PlayerPrefs.SetInt("Score", SumScore.Score);
+            Debug.Log(PlayerPrefs.GetInt("Score"));
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
+        }
+        else if (player.GetComponent<playerTarget>().currentHealth <= 0 && SumScore.Score < 5) {
             playerBar.SetActive(false);
             bossBar.SetActive(false);
             gameOver.SetActive(true);
-            StartCoroutine(LoadLevel(0));
+            SumScore.Reset();
+            StartCoroutine(LoadLevel(0));            
         }
 
         if (stageTrigger == null) {
