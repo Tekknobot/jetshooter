@@ -7243,6 +7243,16 @@ PrefabInstance:
       propertyPath: dampTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5600979075464341237, guid: fff766f76faa3274788f60a62b0f7996,
+        type: 3}
+      propertyPath: speedMult
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5600979075464341237, guid: fff766f76faa3274788f60a62b0f7996,
+        type: 3}
+      propertyPath: rangeMult
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6391124524003298142, guid: fff766f76faa3274788f60a62b0f7996,
         type: 3}
       propertyPath: primaryWeapon

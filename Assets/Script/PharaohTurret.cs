@@ -27,6 +27,8 @@ public class PharaohTurret : MonoBehaviour
 
         if (guardLeft == null && gaurdRight == null && bomber == null) {
             gameObject.GetComponent<ObjectOscillator>().enabled = true;
+            gameObject.GetComponent<ObjectOscillator>().speedMult = 5f;
+            gameObject.GetComponent<ObjectOscillator>().rangeMult = 4f;
         }        
     }
 }
