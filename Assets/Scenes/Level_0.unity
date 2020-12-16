@@ -400,7 +400,7 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 11435270, guid: 69002a90feac05341ba09f7949d7b90e, type: 3}
       propertyPath: m_Text
-      value: SCORE
+      value: STARS
       objectReference: {fileID: 0}
     - target: {fileID: 11493390, guid: 69002a90feac05341ba09f7949d7b90e, type: 3}
       propertyPath: m_FontData.m_FontSize
