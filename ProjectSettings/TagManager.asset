@@ -30,6 +30,7 @@ TagManager:
   - Boss
   - triggerBox
   - A315
+  - crit
   layers:
   - Default
   - TransparentFX
