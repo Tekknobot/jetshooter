@@ -26,7 +26,7 @@ public class PharaohTurret : MonoBehaviour
             primaryWeapon.SetActive(true);
         }
 
-        if (guardLeft == null && gaurdRight == null && bomber == null) {
+        if (bomber.GetComponent<bossTarget>().currentHealth <= 0) {
             gameObject.GetComponent<ObjectOscillator>().enabled = true;
             gameObject.GetComponent<ObjectOscillator>().speedMult = 5f;
             gameObject.GetComponent<ObjectOscillator>().rangeMult = 4f;

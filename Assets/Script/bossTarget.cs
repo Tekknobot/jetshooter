@@ -27,7 +27,7 @@ public class bossTarget : MonoBehaviour
 		healthBar.SetMaxHealth(maxHealth);
 
         GetComponent<ObjectOscillator>().enabled = true;
-        GetComponent<BoxCollider2D>().enabled = true;
+        //GetComponent<BoxCollider2D>().enabled = true;
     }
 
     void Update() {

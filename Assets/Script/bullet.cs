@@ -126,7 +126,13 @@ public class bullet : MonoBehaviour
 		if (bullet_mini != null)
 		{
 			bullet_mini.bulletTakeDamage(damage);
-		}         
+		}      
+
+		TargetCrit crit = other.GetComponent<TargetCrit>();
+		if (crit != null)
+		{
+			crit.critTakeDamage(damage);
+		}              
     }     
 
     void OnBecameInvisible() {
