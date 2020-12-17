@@ -7,6 +7,9 @@ public class pharaoh_mega : MonoBehaviour
     public GameObject primaryWeapon;
     public GameObject turret;
 
+    public GameObject bossBar;
+    bool bossHealthSet = false;
+
     public GameObject crit_0;
     public GameObject crit_1;
     public GameObject crit_2;
@@ -33,7 +36,11 @@ public class pharaoh_mega : MonoBehaviour
     {
         if (turret == null) {
             gameObject.GetComponent<SmoothFollow>().enabled = true;
-            //gameObject.GetComponent<BoxCollider2D>().enabled = true;             
+            bossBar.SetActive(true);   
+            if (bossHealthSet == false) {
+                bossBar.GetComponent<HealthBar>().SetMaxHealth(gameObject.GetComponent<bossTarget>().maxHealth); 
+                bossHealthSet = true;   
+            }            
         }
 
         if (crit_0 == null && crit_1 == null && crit_2 == null && crit_3 == null && crit_4 == null && crit_5 == null && crit_6 == null && 
