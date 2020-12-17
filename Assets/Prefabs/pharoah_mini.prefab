@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08cf0ca7c0ef2b7489a5c544299e9a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  health: 50
   explosionPrefab: {fileID: 3046491801608030097, guid: a1f67c244d1b8be49b36c52ac5297dc0,
     type: 3}
   Portraits:
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2298629183508847198}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45ba0c2057741a1459fda7842b66eebe, type: 3}
   m_Name: 
@@ -303,7 +303,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primaryWeapon: {fileID: 2876238775059469007}
-  bomber_miniPos: {fileID: 0}
+  bullet_0: {fileID: 4038652432991881380, guid: 2141b544365bbc54a911df84c8eb6d39,
+    type: 3}
+  bullet_45: {fileID: 4038652432991881380, guid: 1c9b6ea28ad37504781e5f1134da5b9a,
+    type: 3}
+  bullet_90: {fileID: 4038652432991881380, guid: cd3bb67eea304c847a559ebfa4c85f0d,
+    type: 3}
+  bullet_135: {fileID: 4038652432991881380, guid: 2038ae3963fc77d4eaebc10a40d7a9b0,
+    type: 3}
+  bullet_180: {fileID: 4038652432991881380, guid: 9d03e538a89038b44893fbc55678a8d6,
+    type: 3}
+  bullet_225: {fileID: 4038652432991881380, guid: c881876a3c9ab8a42939ccbe79f56aa0,
+    type: 3}
+  bullet_270: {fileID: 4038652432991881380, guid: d75eb3fb43e03044db78a9834fd77f09,
+    type: 3}
+  bullet_315: {fileID: 4038652432991881380, guid: b6ae0c3afdfabc04ba43d0b5bf57c2e5,
+    type: 3}
+  fireRate: 1
 --- !u!1 &2876238775059469007
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee0a19e9896c6f45984ae5f9e2159e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 4038652432991881380, guid: 2141b544365bbc54a911df84c8eb6d39, type: 3}
+  bullet: {fileID: 4038652432991881380, guid: c881876a3c9ab8a42939ccbe79f56aa0, type: 3}
   turret: {fileID: 2298629183508847198}
   shootInterval: 0.2

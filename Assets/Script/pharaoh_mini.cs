@@ -5,7 +5,6 @@ using UnityEngine;
 public class pharaoh_mini : MonoBehaviour
 {
     public GameObject primaryWeapon;
-    public GameObject bomber_miniPos;
 
     public GameObject bullet_0;
     public GameObject bullet_45;
@@ -23,7 +22,7 @@ public class pharaoh_mini : MonoBehaviour
     {
         gameObject.GetComponent<SmoothFollow>().enabled = true;
         gameObject.GetComponent<BoxCollider2D>().enabled = true;                    
-    }
+    }  
 
     void OnTriggerEnter2D(Collider2D other)
     {
