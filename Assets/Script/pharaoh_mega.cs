@@ -17,20 +17,22 @@ public class pharaoh_mega : MonoBehaviour
     public GameObject crit_4;
     public GameObject crit_5; 
 
+    public GameObject[] points;
+    int index;
+    GameObject currentPoint;
+
     // Start is called before the first frame update
     void Start()
     {
         gameObject.GetComponent<ObjectOscillator>().enabled = false;
-        gameObject.GetComponent<SmoothFollow>().enabled = true;
 
         crit_0.GetComponent<Turrets>().enabled = false;
         crit_1.GetComponent<Turrets>().enabled = false;
         crit_2.GetComponent<Turrets>().enabled = false;
         crit_3.GetComponent<Turrets>().enabled = false;
         crit_4.GetComponent<Turrets>().enabled = false;
-        crit_5.GetComponent<ObjectEmitter>().enabled = false;
-
-        StartCoroutine(BeginSequences());               
+        crit_5.GetComponent<ObjectEmitter>().enabled = false;   
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;            
     }
 
     // Update is called once per frame
@@ -47,7 +49,7 @@ public class pharaoh_mega : MonoBehaviour
 
         if (crit_0 == null && crit_1 == null && crit_2 == null && crit_3 == null && crit_4 == null && crit_5 == null) {
             gameObject.GetComponent<BoxCollider2D>().enabled = true;    
-            gameObject.GetComponent<ObjectOscillator>().enabled = true;          
+            gameObject.GetComponent<SmoothFollow>().enabled = true;         
         }        
 
         if (gameObject.GetComponent<bossTarget>().currentHealth <= 0f) {
@@ -59,13 +61,14 @@ public class pharaoh_mega : MonoBehaviour
     {
         if (other.tag == "triggerBox") {
             primaryWeapon.SetActive(true);
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            StartCoroutine(BeginSequences());
         }
     }    
 
     IEnumerator BeginSequences() {
-        yield return new WaitForSeconds(1);
-        gameObject.GetComponent<SmoothFollow>().enabled = false;
         primaryWeapon.SetActive(false);
+        yield return new WaitForSeconds(1);
         if (crit_5 != null) {
             crit_5.GetComponent<ObjectEmitter>().enabled = false;
         }
@@ -109,19 +112,27 @@ public class pharaoh_mega : MonoBehaviour
             crit_5.GetComponent<ObjectEmitter>().enabled = true; 
         }      
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         if (crit_5 != null) {        
             crit_5.GetComponent<ObjectEmitter>().enabled = false; 
         }
-        gameObject.GetComponent<ObjectOscillator>().enabled = true;
-        primaryWeapon.SetActive(true);
 
-        yield return new WaitForSeconds(5); 
+        yield return new WaitForSeconds(3); 
         gameObject.GetComponent<SmoothFollow>().enabled = true;
-        gameObject.GetComponent<ObjectOscillator>().enabled = false;       
-        primaryWeapon.SetActive(false);
+        index = Random.Range (0, points.Length);
+        currentPoint = points[index];
+        gameObject.GetComponent<SmoothFollow>().target = currentPoint.transform;   
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+        if (crit_5 != null) {        
+            crit_5.GetComponent<ObjectEmitter>().enabled = true; 
+        }
+
+        yield return new WaitForSeconds(3);
         StartCoroutine(BeginSequences());                  
+    }
+
+    IEnumerator DelayBoss() {
+        yield return new WaitForSeconds(5);
     }
 }
