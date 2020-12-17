@@ -5718,6 +5718,36 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3056132388569388693, guid: ac38560a1b123e44ca7fd731c40817ee,
+        type: 3}
+      propertyPath: gradient.m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056132388569388693, guid: ac38560a1b123e44ca7fd731c40817ee,
+        type: 3}
+      propertyPath: gradient.ctime0
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056132388569388693, guid: ac38560a1b123e44ca7fd731c40817ee,
+        type: 3}
+      propertyPath: gradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056132388569388693, guid: ac38560a1b123e44ca7fd731c40817ee,
+        type: 3}
+      propertyPath: gradient.key0.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056132388569388693, guid: ac38560a1b123e44ca7fd731c40817ee,
+        type: 3}
+      propertyPath: gradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056132388569388693, guid: ac38560a1b123e44ca7fd731c40817ee,
+        type: 3}
+      propertyPath: gradient.key1.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056132388569388694, guid: ac38560a1b123e44ca7fd731c40817ee,
         type: 3}
       propertyPath: m_LocalPosition.x

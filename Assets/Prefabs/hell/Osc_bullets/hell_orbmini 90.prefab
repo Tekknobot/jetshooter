@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 1688556774718483147}
   - component: {fileID: -3399232524748811266}
   m_Layer: 2
-  m_Name: hell_orbmini 2
+  m_Name: hell_orbmini 90
   m_TagString: A90
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -9
+  m_SortingOrder: -7
   m_Sprite: {fileID: 3408857071758561956, guid: c4b7cbf00b700814f8d8b8a7298438c2,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

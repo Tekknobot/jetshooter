@@ -14,15 +14,15 @@ GameObject:
   - component: {fileID: 4038652432991881388}
   - component: {fileID: 4038652432991881389}
   - component: {fileID: 4038652432991881390}
+  - component: {fileID: 4038652432991881384}
+  - component: {fileID: 4038652432991881385}
   - component: {fileID: 4038652432991881391}
   - component: {fileID: 4038652432991881382}
   - component: {fileID: -8392817939373640837}
-  - component: {fileID: 8731520819123702465}
-  - component: {fileID: 5813527455891558886}
-  - component: {fileID: 4929283343364199642}
+  - component: {fileID: 5351295257375609783}
   m_Layer: 2
-  m_Name: hell_orbmini 180
-  m_TagString: A180
+  m_Name: orb_mini_dir_316
+  m_TagString: A315
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,13 +34,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4038652432991881380}
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4038652432991881386
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -173,6 +173,56 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4038652432991881384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038652432991881380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b03af0a355728141aac582b9778fd77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 1, b: 1, a: 0}
+  flashDuration: 0.1
+--- !u!114 &4038652432991881385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038652432991881380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08cf0ca7c0ef2b7489a5c544299e9a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  explosionPrefab: {fileID: 165192, guid: 54c23dd75e9041248ad671a01699a2bf, type: 3}
+  Portraits:
+  - {fileID: -3183050800061774617, guid: 8b96b06bf9a372540bb5ac8e6a3548e9, type: 3}
+  - {fileID: 2673457766576801413, guid: 2960a775a41d53b429e6e3163e8de2f2, type: 3}
+  - {fileID: -9192509067957812943, guid: 45b0df0c4d5eab746afc9f306ef47479, type: 3}
+  - {fileID: 4508322645771161896, guid: ce2873725e9b5c249a4cf9d5cab7dc89, type: 3}
+  Portrait: {fileID: 0}
+  animator: {fileID: 0}
+  currentPic: 0
+  pilotName: {fileID: 0}
+  pilotText: {fileID: 0}
+  DialogueList:
+  - "Frankly, my dear, I don\u2019t give a damn."
+  - I'm going to make him an offer he can't refuse.
+  - Yippee Ki Yay!
+  - Toto, I've got a feeling we're not in Kansas anymore
+  - Here's looking at you, kid.
+  - Go ahead, make my day.
+  - All right, Mr. DeMille, I'm ready for my closeup.
+  - May the Force be with you.
+  - Fasten your seatbelts. It's going to be a bumpy night.
+  - You talking to me?
+  emitters: []
 --- !u!114 &4038652432991881391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,20 +271,7 @@ MonoBehaviour:
   pickup: {fileID: 751308420837296306, guid: 1dbdbd3bc84447b49adc7e4045d182ce, type: 3}
   pickup2: {fileID: 751308420837296306, guid: 48bab1c8a9d889243bc15851a352c7ac, type: 3}
   pickup3: {fileID: 751308420837296306, guid: aa2d344f64d1d0341bb8004fae0e3357, type: 3}
---- !u!114 &8731520819123702465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038652432991881380}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51ba5ab5f798b594bb9e3b6ff908f9e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyTime: 0
---- !u!114 &5813527455891558886
+--- !u!114 &5351295257375609783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,21 +280,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4038652432991881380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b74f8653dd9a754ba148377e4e39e8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 2
-  explosionPrefab: {fileID: 165192, guid: 54c23dd75e9041248ad671a01699a2bf, type: 3}
---- !u!114 &4929283343364199642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038652432991881380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46c29772b8dedef448eab7f00a306f99, type: 3}
+  m_Script: {fileID: 11500000, guid: 4359b3d0e0c01d344b99f632652d16a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
