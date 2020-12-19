@@ -57,7 +57,7 @@ public class pharaoh_mega : MonoBehaviour
         crit_5.GetComponent<ObjectEmitter>().enabled = false;   
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
 
-        //lastRoutine = StartCoroutine(BeginSequences());           
+        lastRoutine = StartCoroutine(BeginSequences());           
     }
 
     // Update is called once per frame
@@ -65,7 +65,7 @@ public class pharaoh_mega : MonoBehaviour
     {
         if (turret == null && hasSequenceStarted == false) {
             hasSequenceStarted = true;
-            lastRoutine = StartCoroutine(BeginSequences());
+            //lastRoutine = StartCoroutine(BeginSequences());
             bossBar.SetActive(true);   
             if (bossHealthSet == false) {
                 bossBar.GetComponent<HealthBar>().SetMaxHealth(gameObject.GetComponent<bossTarget>().maxHealth); 
@@ -150,16 +150,10 @@ public class pharaoh_mega : MonoBehaviour
             }
 
             yield return new WaitForSeconds(3);
-            index = Random.Range (0, points.Length);
+            index = UniqueRandomInt(0, points.Length);
             currentPoint = points[index];
             gameObject.GetComponent<SmoothFollow>().target = currentPoint.transform;   
             gameObject.GetComponent<SmoothFollow>().enabled = true;
-
-            yield return new WaitForSeconds(3);
-            if (crit_5 != null) {        
-                crit_5.GetComponent<ObjectEmitter>().enabled = true; 
-            }
-            yield return new WaitForSeconds(3);
         }                  
     }
 
