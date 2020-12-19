@@ -9,7 +9,6 @@ public class PharaohTurret : MonoBehaviour
     public GameObject gaurdMiddle;
     public GameObject gaurdRight;
     public GameObject bomber;
-    public GameObject bomberPrimaryWeapon;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +19,10 @@ public class PharaohTurret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (guardLeft == null && gaurdMiddle == null && gaurdRight == null && bomberPrimaryWeapon.activeSelf == true) {
+        if (guardLeft == null && gaurdMiddle == null && gaurdRight == null) {
             gameObject.GetComponent<SmoothFollow>().enabled = true;
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            bomber.SetActive(true);
             primaryWeapon.SetActive(true);
         }
 

@@ -55,7 +55,6 @@ public class pharaoh_mega : MonoBehaviour
         crit_3.GetComponent<Turrets>().enabled = false;
         crit_4.GetComponent<Turrets>().enabled = false;
         crit_5.GetComponent<ObjectEmitter>().enabled = false;   
-        gameObject.GetComponent<BoxCollider2D>().enabled = true;
 
         //lastRoutine = StartCoroutine(BeginSequences());           
     }
@@ -65,6 +64,16 @@ public class pharaoh_mega : MonoBehaviour
     {
         if (turret == null && hasSequenceStarted == false) {
             hasSequenceStarted = true;
+            
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            crit_0.GetComponent<BoxCollider2D>().enabled = true;
+            crit_1.GetComponent<BoxCollider2D>().enabled = true;
+            crit_2.GetComponent<BoxCollider2D>().enabled = true;
+            crit_3.GetComponent<BoxCollider2D>().enabled = true;
+            crit_4.GetComponent<BoxCollider2D>().enabled = true;
+            crit_5.GetComponent<BoxCollider2D>().enabled = true;
+            crit_5.GetComponent<ObjectEmitter>().enabled = true;
+
             lastRoutine = StartCoroutine(BeginSequences());
             bossBar.SetActive(true);   
             if (bossHealthSet == false) {
