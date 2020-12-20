@@ -2913,7 +2913,7 @@ GameObject:
   - component: {fileID: 462476495}
   - component: {fileID: 462476500}
   m_Layer: 0
-  m_Name: Desert
+  m_Name: Moon Surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2974,7 +2974,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -20
-  m_Sprite: {fileID: -2017104113399972681, guid: 56460011e6c5de146a0a8c5abf04fe0f,
+  m_Sprite: {fileID: 1603397788920078613, guid: b9cd25503e5526b46a18588c71b19d67,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4610,7 +4610,7 @@ PrefabInstance:
     - target: {fileID: 2298629183508847198, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8532469412991338992, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
@@ -8318,7 +8318,7 @@ PrefabInstance:
     - target: {fileID: 2298629183508847198, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8532469412991338992, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
@@ -10225,7 +10225,7 @@ GameObject:
   - component: {fileID: 2125656419}
   - component: {fileID: 2125656418}
   m_Layer: 0
-  m_Name: Desert (1)
+  m_Name: Moon Surface 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10334,7 +10334,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -20
-  m_Sprite: {fileID: -2017104113399972681, guid: 56460011e6c5de146a0a8c5abf04fe0f,
+  m_Sprite: {fileID: 1603397788920078613, guid: b9cd25503e5526b46a18588c71b19d67,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11244,7 +11244,7 @@ PrefabInstance:
     - target: {fileID: 1910885424652065635, guid: 07623ce4975bcdc499ebfd8a803a6bb8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2168944178339365825, guid: 07623ce4975bcdc499ebfd8a803a6bb8,
         type: 3}
@@ -12676,7 +12676,7 @@ PrefabInstance:
     - target: {fileID: 8482107917888811605, guid: fff766f76faa3274788f60a62b0f7996,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8482107917888811606, guid: fff766f76faa3274788f60a62b0f7996,
         type: 3}
@@ -13200,7 +13200,7 @@ PrefabInstance:
     - target: {fileID: 2298629183508847198, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8532469412991338992, guid: c561825a0ffadd747b324c78d228759b,
         type: 3}
