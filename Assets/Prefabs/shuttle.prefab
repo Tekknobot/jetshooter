@@ -261,7 +261,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: 13, y: 9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -285,7 +285,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 13, y: 9}
-    newSize: {x: 4, y: 4}
+    newSize: {x: 13, y: 9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -489,4 +489,5 @@ MonoBehaviour:
   primaryWeapon: {fileID: 41319460170855341}
   guardLeft: {fileID: 0}
   guardMiddle: {fileID: 0}
-  guarddRight: {fileID: 0}
+  guardRight: {fileID: 0}
+  guardBottom: {fileID: 0}

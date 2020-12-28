@@ -2229,7 +2229,6 @@ GameObject:
   - component: {fileID: 1049239846723740352}
   - component: {fileID: 1049239846723740366}
   - component: {fileID: 6242039745799696682}
-  - component: {fileID: 34406996483263201}
   m_Layer: 2
   m_Name: shuttle_alpha
   m_TagString: Boss
@@ -2518,33 +2517,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dampTime: 1
   target: {fileID: 0}
---- !u!114 &34406996483263201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7974752264927779573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cee0f65d6969b4296d2f1a883aaa07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primaryWeapon: {fileID: 1049239847085563640}
-  secondaryWeapon: {fileID: 7652026953059983065}
-  turret: {fileID: 0}
-  bossBar: {fileID: 0}
-  crit_0: {fileID: 7652026953866042280}
-  crit_1: {fileID: 7652026953796997361}
-  crit_2: {fileID: 7652026953275970236}
-  crit_3: {fileID: 7652026952895673192}
-  crit_4: {fileID: 7652026952500986455}
-  crit_5: {fileID: 7652026953817432743}
-  points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  mini: {fileID: 2298629183508847198, guid: c561825a0ffadd747b324c78d228759b, type: 3}
-  spawnPoint: {fileID: 0}

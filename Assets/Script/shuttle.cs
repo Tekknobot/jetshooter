@@ -10,6 +10,8 @@ public class shuttle : MonoBehaviour
     public GameObject guardRight;
     public GameObject guardBottom;
 
+    public GameObject secondaryGuards;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class shuttle : MonoBehaviour
 
         if (gameObject.GetComponent<bossTarget>().currentHealth <= 0f) {
             primaryWeapon.SetActive(false);
+            secondaryGuards.SetActive(true);
         }
     }
 
