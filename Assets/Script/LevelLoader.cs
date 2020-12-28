@@ -37,8 +37,6 @@ public class LevelLoader : MonoBehaviour
             bossBar.SetActive(false);
             continueAgain.SetActive(true);
             SumScore.Subtract(5);
-            PlayerPrefs.SetInt("Score", SumScore.Score);
-            Debug.Log(PlayerPrefs.GetInt("Score"));
             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
         }
         else if (player.GetComponent<playerTarget>().currentHealth <= 0 && SumScore.Score < 5) {
